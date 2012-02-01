@@ -1,0 +1,14 @@
+/* CSS Document */
+
+section {
+	padding-top:60px;
+}
+.hero-unit {
+	text-align:center;
+}
+.hero-unit .lead {
+  margin-bottom: 18px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 27px;
+}
