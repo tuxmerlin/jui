@@ -12,3 +12,6 @@ section {
   font-weight: 200;
   line-height: 27px;
 }
+.btn .caret {
+	margin-bottom:7px;
+}
