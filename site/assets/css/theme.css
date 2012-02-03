@@ -1,0 +1,16 @@
+/* CSS Document */
+body {
+	padding-top:60px;
+}
+.nav-list .active > a:hover {
+  color:#999999;
+  display: block;
+  padding: 3px 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.row-even,
+.row-odd {
+	padding:5px 0;
+}
