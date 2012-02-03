@@ -15,3 +15,7 @@ section {
 .btn .caret {
 	margin-bottom:7px;
 }
+.blog-row-rule,
+.blog-item-rule {
+	border:0;
+}
