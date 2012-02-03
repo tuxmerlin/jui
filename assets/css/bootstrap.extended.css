@@ -11,13 +11,10 @@
 .btn .caret {
 	margin-bottom:7px;
 }
-<<<<<<< HEAD
-=======
 .blog-row-rule,
 .blog-item-rule {
 	border:0;
 }
-
 /* Alternating Rows */
 .row-even,.row-odd{
 	padding: 5px;
@@ -30,4 +27,3 @@
 .row-even {
 	background-color: #f9f9f9;
 }
->>>>>>> d2b29d12249dd7114f7b86b5e9e28399ed994ead
