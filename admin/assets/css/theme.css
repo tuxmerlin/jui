@@ -79,11 +79,25 @@
 .subhead h1{
 	font-size: 20px;
 	font-weight: normal;
-	margin-left: 20px;
+	margin-left: 10px;
 	margin-top: 6px;
 }
 /* Content */
 .well .page-header{
-	margin: 0 0 18px 0;
+	margin: -10px 0 18px 0;
 	padding-bottom: 5px;
+}
+.well .row-even p,
+.well .row-odd p{
+	margin-bottom: 0;
+}
+
+/* Sidebar */
+.sidebar-nav .nav-list > li > a{
+	color: #555;
+}
+.sidebar-nav .nav-list .active > a{
+	background-color: #ddd;
+	text-shadow: 0 1px 0 #fff;
+	font-weight: bold;
 }
