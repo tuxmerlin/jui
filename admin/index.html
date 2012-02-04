@@ -8,6 +8,40 @@
 <link href="../assets/css/bootstrap.extended.css" rel="stylesheet" type="text/css" />
 <link href="../assets/css/bootstrap.responsive.css" rel="stylesheet" type="text/css" />
 <link href="assets/css/theme.css" rel="stylesheet" type="text/css" />
+
+	<!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/ico/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/ico/apple-touch-icon-114x114.png">
+    
+    <!-- Google Chart Tools -->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Month');
+        data.addColumn('number', 'Users');
+        data.addColumn('number', 'Sales');
+        data.addRows([
+          ['Jan', 1000, 400],
+          ['Feb', 1170, 460],
+          ['Mar', 660, 1120],
+          ['Apr', 1030, 540]
+        ]);
+
+        var options = {
+          width: 530, height: 290,
+          title: 'Website Performance',
+          vAxis: {title: 'Sales and Users',  titleTextStyle: {color: 'red'}}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
 </head>
 <body>
 <!-- Top Navigation -->
@@ -19,7 +53,7 @@
 					<li class="active"><a href="index.html">Dashboard</a></li>
 					<li><a href="examples/pages.html">Pages</a></li>
 					<li><a href="examples/content.html">Content</a></li>
-					<li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Extensions<b class="caret"></b></a>
+					<li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Extensions <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li class=""><a href="./docs.html#banners">Banners</a></li>
 							<li class=""><a href="./docs.html#contact">Contact</a></li>
@@ -36,7 +70,7 @@
 					</li>
 				</ul>
 				<ul class="nav pull-right">
-					<li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Administration<b class="caret"></b></a>
+					<li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Administration <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li class=""><a href="./docs.html#banners">Banners</a></li>
 							<li class=""><a href="./docs.html#contact">Contact</a></li>
@@ -126,21 +160,76 @@
 			</div>
 			<div class="span10">
 				<div class="btn-toolbar">
+					<div class="btn-group">
+						<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+						  Actions 
+						  <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+						  <li><a href="#">Action</a></li>
+						  <li><a href="#">Action</a></li>
+						  <li><a href="#">Action</a></li>
+						  <li class="divider"></li>
+						  <li><a href="#">Action</a></li>
+						  <li><a href="#">Action</a></li>
+						</ul>
+					</div>
 			        <div class="btn-group">
-			          <a class="btn" href="#">1</a>
-			          <a class="btn" href="#">2</a>
-			          <a class="btn" href="#">3</a>
-			          <a class="btn" href="#">4</a>
+			          <a class="btn" href="#"><i class="icon-file"></i> Copy</a>
+			          <a class="btn" href="#"><i class="icon-share-alt"></i> Move</a>
+			          <a class="btn" href="#"><i class="icon-remove"></i> Delete</a>
 			        </div>
 			        <div class="btn-group">
-			          <a class="btn" href="#">5</a>
-			          <a class="btn" href="#">6</a>
-			          <a class="btn" href="#">7</a>
+			        	<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+			        	  <i class="icon-calendar"></i> 
+			        	  <span class="caret"></span>
+			        	</a>
+			        	<ul class="dropdown-menu">
+			        	  <li><a href="#">Publish</a></li>
+			        	  <li><a href="#">Unpublish</a></li>
+			        	</ul>
 			        </div>
 			        <div class="btn-group">
-			          <a class="btn" href="#">8</a>
+			        	<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+			        	  <i class="icon-folder-open"></i> 
+			        	  <span class="caret"></span>
+			        	</a>
+			        	<ul class="dropdown-menu">
+			        	  <li><a href="#">Category One</a></li>
+			        	  <li><a href="#">Category Two</a></li>
+			        	</ul>
 			        </div>
-			      </div>
+			        <div class="btn-group">
+			        	<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+			        	  <i class="icon-inbox"></i> 
+			        	  <span class="caret"></span>
+			        	</a>
+			        	<ul class="dropdown-menu">
+			        	  <li><a href="#">Archive</a></li>
+			        	  <li><a href="#">Unarchive</a></li>
+			        	</ul>
+			        </div>
+			        <div class="btn-group pull-right">
+			        	<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+			        	  <i class="icon-cog"></i> 
+			        	  <span class="caret"></span>
+			        	</a>
+			        	<ul class="dropdown-menu">
+			        	  <li><a href="#">Config One</a></li>
+			        	  <li><a href="#">Config Two</a></li>
+			        	</ul>
+			        </div>
+			        <div class="btn-group pull-right">
+			        	<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+			        	  <i class="icon-th-list"></i> 
+			        	  <span class="caret"></span>
+			        	</a>
+			        	<ul class="dropdown-menu">
+			        	  <li><a href="#">Sort by Title</a></li>
+			        	  <li><a href="#">Sort by Created date</a></li>
+			        	</ul>
+			        </div>
+			     </div>
 			</div>
 		</div>
 	</div>
@@ -150,19 +239,34 @@
 	<div class="row">
 		<div class="span2">
 		<!-- Begin Placeholder -->
+			<div class="btn-group">
+			  <a class="btn btn-large btn-primary btn-wide dropdown-toggle" data-toggle="dropdown" href="#">
+			    Create 
+			    <span class="caret"></span>
+			  </a>
+			  <ul class="dropdown-menu">
+			    <li><a href="#">Content</a></li>
+			    <li><a href="#">Page</a></li>
+			    <li><a href="#">Module</a></li>
+			    <li class="divider"></li>
+			    <li><a href="#">Product</a></li>
+			    <li><a href="#">Forum</a></li>
+			    <li><a href="#">User</a></li>
+			  </ul>
+			</div>
+			<hr />
 			<div class="sidebar-nav">
 				<ul class="nav nav-list">
-	              <li class="nav-header">Sidebar</li>
+	              <li class="nav-header">Submenu</li>
 	              <li class="active"><a href="#">General</a></li>
 	              <li><a href="#">Shop Dashboard</a></li>
 	              <li><a href="#">Blog Dashboard</a></li>
 	              <li class="nav-header">System</li>
 	              <li><a href="#">Global Settings</a></li>
-	              <li><a href="#">Link</a></li>
-	              <li><a href="#">Link</a></li>
-	              <li><a href="#">Link</a></li>
-	              <li><a href="#">Link</a></li>
-	              <li><a href="#">Link</a></li>
+	              <li><a href="#">System Information</a></li>
+	              <li><a href="#">Clear Cache</a></li>
+	              <li><a href="#">Global Check-in</a></li>
+	              <li><a href="#">Install Extensions</a></li>
 	            </ul>
             </div>
         <!-- End Placeholder -->
@@ -173,9 +277,7 @@
 				<div class="page-header">
 					<h2>Site Stats</h2>
 				</div>
-				<p>
-					<img src="http://placehold.it/550x350" alt="">
-				</p>
+				<div id="chart_div"></div>
 			</div>
 			<!-- End Placeholder -->
 			<!-- Begin Placeholder -->
@@ -307,7 +409,7 @@
 		<div class="span4">
 		<!-- Begin Placeholder -->
 			<div class="well">
-				<div class="well-header">
+				<div class="page-header">
 					<h3>Users</h3>
 				</div>
 				<div class="row-fluid row-odd">
@@ -385,7 +487,7 @@
 		<!-- End Placeholder -->
 		<!-- Begin Placeholder -->
 			<div class="well">
-				<div class="well-header">
+				<div class="page-header">
 					<h3>Quick Links</h3>
 				</div>
 				<div class="row-fluid row-odd">
@@ -415,48 +517,48 @@
 				<div class="row-fluid row-odd">
 					<div class="span6">
 						<p>
-							<a href="#"><i class="icon-pencil"></i> New Article</a>
+							<a href="#"><i class="icon-picture"></i> Media Manager</a>
 						</p>
 					</div>
 					<div class="span6">
 						<p>
-							<a href="#"><i class="icon-gift"></i> Extensions</a>
+							<a href="#"><i class="icon-asterisk"></i> Plugin Manager</a>
 						</p>
 					</div>
 				</div>
 				<div class="row-fluid row-even">
 					<div class="span6">
 						<p>
-							<a href="#"><i class="icon-file"></i> Content Manager</a>
+							<a href="#"><i class="icon-list-alt"></i> Menu Manager</a>
 						</p>
 					</div>
 					<div class="span6">
 						<p>
-							<a href="#"><i class="icon-fire"></i> Components</a>
+							<a href="#"><i class="icon-tint"></i> Template Manager</a>
 						</p>
 					</div>
 				</div>
 				<div class="row-fluid row-odd">
 					<div class="span6">
 						<p>
-							<a href="#"><i class="icon-pencil"></i> New Article</a>
+							<a href="#"><i class="icon-user"></i> User Manager</a>
 						</p>
 					</div>
 					<div class="span6">
 						<p>
-							<a href="#"><i class="icon-gift"></i> Extensions</a>
+							<a href="#"><i class="icon-comment"></i> Language Manager</a>
 						</p>
 					</div>
 				</div>
 				<div class="row-fluid row-even">
 					<div class="span6">
 						<p>
-							<a href="#"><i class="icon-file"></i> Content Manager</a>
+							<a href="#"><i class="icon-edit"></i> Edit Profile</a>
 						</p>
 					</div>
 					<div class="span6">
 						<p>
-							<a href="#"><i class="icon-fire"></i> Components</a>
+							<a href="#"><i class="icon-cog"></i> Global Configuration</a>
 						</p>
 					</div>
 				</div>
