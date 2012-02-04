@@ -11,7 +11,6 @@
 .btn .caret {
 	margin-bottom:7px;
 }
-<<<<<<< HEAD
 .blog-row-rule,
 .blog-item-rule {
 	border:0;
@@ -28,13 +27,10 @@
 .row-even {
 	background-color: #f9f9f9;
 }
-=======
-
 .blog-row-rule,
 .blog-item-rule {
 	border:0;
 }
-
 /* Alternating Rows */
 .row-even,.row-odd{
 	padding: 5px;
@@ -47,9 +43,40 @@
 .row-even {
 	background-color: #f9f9f9;
 }
-
 /* Buttons */
 .btn-wide{
 	width: 99%;
 }
->>>>>>> 382b9e39f4b38c271720d3beabb7bb8ab8d52083
+.row-fluid .offset1 {
+  margin-left: 8.382978723%;
+}
+.row-fluid .offset2 {
+  margin-left: 16.89361702%;
+}
+.row-fluid .offset3 {
+  margin-left: 25.404255317%;
+}
+.row-fluid .offset4 {
+  margin-left: 33.914893614%;
+}
+.row-fluid .offset5 {
+  margin-left: 42.425531911%;
+}
+.row-fluid .offset6 {
+  margin-left: 50.93617020799999%;
+}
+.row-fluid .offset7 {
+  margin-left: 59.446808505%;
+}
+.row-fluid .offset8 {
+  margin-left: 67.95744680199999%;
+}
+.row-fluid .offset9 {
+  margin-left: 76.468085099%;
+}
+.row-fluid .offset10 {
+  margin-left: 84.97872339599999%;
+}
+.row-fluid .offset11 {
+  margin-left: 91.489361693%;
+}
