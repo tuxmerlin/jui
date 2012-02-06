@@ -11,11 +11,11 @@
 .btn .caret {
 	margin-bottom:7px;
 }
-<<<<<<< HEAD
 .blog-row-rule,
 .blog-item-rule {
 	border:0;
 }
+
 /* Alternating Rows */
 .row-even,.row-odd{
 	padding: 5px;
@@ -28,7 +28,6 @@
 .row-even {
 	background-color: #f9f9f9;
 }
-=======
 
 .blog-row-rule,
 .blog-item-rule {
@@ -46,10 +45,23 @@
 }
 .row-even {
 	background-color: #f9f9f9;
+}
+
+/* Row reveal */
+.row-fluid .row-reveal{
+	visibility: hidden;
+}
+.row-fluid:hover .row-reveal{
+	visibility: visible;
 }
 
 /* Buttons */
 .btn-wide{
-	width: 99%;
+	width: 90%;
 }
->>>>>>> 382b9e39f4b38c271720d3beabb7bb8ab8d52083
+
+/* Nav List Offset */
+.nav-list > li.offset > a{
+	padding-left: 30px;
+	font-size: 12px;
+}
