@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>About</title>
+<link href="../../assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="../../assets/css/bootstrap.extended.css" rel="stylesheet" type="text/css" />
+<link href="../assets/css/theme.css" rel="stylesheet" type="text/css" />
+<link href="../../assets/css/bootstrap.responsive.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<!-- Top Navigation -->
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container"> 
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> 
+				<span class="icon-bar"></span> 
+				<span class="icon-bar"></span> 
+				<span class="icon-bar"></span> 
+			</a> 
+			<a class="brand" href="../../index.html">Joomla 3.0</a>
+			<div class="nav-collapse">
+				<ul class="nav">
+					<li class=""><a href="../index.html">Home</a></li>
+					<li class="active"><a href="about.html">About</a></li>
+					<li class=""><a href="contact.html">Contact</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Examples<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class=""><a href="layouts/article.html">Article</a></li>
+							<li class=""><a href="layouts/article-pagebreak.html">Article with Pagebreaks</a></li>
+							<li class=""><a href="layouts/list.html">List</a></li>
+							<li class=""><a href="layouts/blog.html">Blog</a></li>
+							<li class=""><a href="layouts/multi-column.html">Multi-column</a></li>
+							<li class=""><a href="layouts/table.html">Table</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!--/.nav-collapse --> 
+		</div>
+	</div>
+</div>
+<!-- Container -->
+<div class="container">
+	About
+	<div class="row">
+	
+	</div>
+	<hr />
+	<div class="footer">
+		
+	</div>
+</div>
+<!-- Le javascript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../assets/js/jquery-1.7.1.min.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $('.dropdown-toggle').dropdown()
+  $('.collapse').collapse('show')
+  $('#myModal').modal('hide')
+  $('.typeahead').typeahead()
+  $('.tabs').button()
+  $(".alert-message").alert()
+  $(window).bind("load resize", function() {
+   var windowHeight = "height:"+($(window).height()-45)+"px"; // height of full document
+   var windowWidth = "width:"+($(window).width()-30)+"px"; // width of full document
+   $('.side-nav, .fluid-content.main, .modal.full').attr('style', windowHeight);
+  });
+</script>
+</body>
+</html>
