@@ -10,7 +10,17 @@ body {
   margin-right: -15px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
-.row-even,
-.row-odd {
-	padding:5px 0;
+.level-1,
+.level-2,
+.level-3 {
+	padding:10px 0;
+}
+.level-1 {
+	background:#fff;
+}
+.level-2 {
+	background:#f8f8f8;
+}
+.level-3 {
+	background:#eee;
 }
