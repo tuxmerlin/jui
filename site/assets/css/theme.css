@@ -10,6 +10,22 @@ body {
   margin-right: -15px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
+.item-header {
+	margin-bottom:20px;
+}
+.item-title {
+	margin-bottom:9px;	
+}
+.pull-right.item-image {
+	margin:0 0 18px 20px;
+}
+.pull-left.item-image {
+	margin:0 20px 18px 0;
+}
+.item-image .caption {
+	text-align:center;
+}
+/* Level System */
 .level-1,
 .level-2,
 .level-3 {
