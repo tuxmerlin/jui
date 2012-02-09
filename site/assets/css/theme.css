@@ -33,10 +33,13 @@ body {
 }
 .level-1 {
 	background:#fff;
+	border-bottom:1px solid #ddd;
 }
 .level-2 {
 	background:#f8f8f8;
+	border-bottom:1px solid #ddd;
 }
 .level-3 {
 	background:#f4f4f4;
+	border-bottom:1px solid #ddd;
 }
