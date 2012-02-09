@@ -62,21 +62,24 @@
 					<h1>Joomla Page Title</h1>
 				</div>
 				<div class="item-actions"> 
-					<!-- Item Actions -->
-					<div class="btn-toolbar"> 
-						<!-- Administrate -->
-						<div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user"></i> User <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#"><i class="icon-pencil"></i> Edit</a></li>
-								<li><a href="#"><i class="icon-trash"></i> Delete</a></li>
-								<li class="divider"></li>
-								<li><a href="#"><i class="i"></i> Edit in admin</a></li>
-							</ul>
+						<!-- Item Actions -->
+						<div class="btn-toolbar"> 
+							<!-- Administrate -->
+							<div class="btn-group"> 
+								<a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user"></i> User <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#edit-article" data-toggle="modal"><i class="icon-pencil"></i> Edit</a></li>
+									<li><a href="#"><i class="icon-trash"></i> Delete</a></li>
+									<li class="divider"></li>
+									<li><a href="../../../admin/examples/com_pages_create_1.html"><i class="i"></i> Edit in admin</a></li>
+								</ul>
+							</div>
+							<!-- Print Email -->
+							<div class="btn-group"> 
+							<a class="btn" href="print.html" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"> <i class="icon-print"></i> Print </a> 
+							<a class="btn" data-toggle="modal" href="#email-form" title="Email" rel="nofollow"> <i class="icon-envelope"></i> Email </a> 
+							<a class="btn" href="#comment" title="Comment" onclick="#" rel="nofollow"> <i class="icon-comment"></i> Comment (5)</a> </div>
 						</div>
-						<!-- Print Email -->
-						<div class="btn-group"> <a class="btn" href="#" title="Print" onclick="#" rel="nofollow"> <i class="icon-print"></i> Print </a> <a class="btn" href="#" title="Email" onclick="#" rel="nofollow"> <i class="icon-envelope"></i> Email </a> <a class="btn" href="#comment" title="Email" onclick="#" rel="nofollow"> <i class="icon-comment"></i> Comment </a> </div>
-					</div>
-				</div>
 				<div class="item-header"> 
 					<!-- Item Author -->
 					<p><span class="item-author">By <a href="#">Super Admin</a></span></p>
@@ -87,7 +90,7 @@
 				</div>
 				<!-- Item Content -->
 				<div class="row-fluid item-content">
-					<div class="thumbnail pull-right item-image"> <img src="http://placehold.it/260x180" alt="">
+					<div class="thumbnail pull-left item-image"> <img src="http://placehold.it/260x180" alt="">
 						<div class="caption">
 							<h5>Thumbnail Caption</h5>
 						</div>
@@ -272,7 +275,10 @@
 		</div>
 	</div>
 	<hr />
-	<div class="footer"> </div>
+	<div class="footer">
+		<p class="pull-right"><a href="#top" id="back-top">Back to top</a></p>
+		<p>&copy; Copyright JUI Project 2012, All rights reserved.</p>
+	</div>
 	
 	<!-- Modals 
 	===================================================================--> 
@@ -375,6 +381,265 @@
 			</div>
 		</div>
 		<div class="modal-footer"> <a href="#" class="btn btn-primary" data-dismiss="modal">Save</a> <a href="#" class="btn" data-dismiss="modal">Cancel</a> </div>
+	</div>
+	<!-- Edit Article Modal -->
+	<div class="modal fade" id="edit-article">
+		<div class="modal-header"> <a class="close" data-dismiss="modal">×</a>
+			<h3>Edit Joomla Article Title</h3>
+		</div>
+		<div class="modal-footer"> <a href="#" class="btn" data-dismiss="modal">Cancel</a> <a href="#" class="btn btn-primary" data-dismiss="modal">Save</a> </div>
+		<div class="modal-body">
+			<div class="form form-comment">
+				<form class="form-horizontal">
+					<fieldset>
+						<div class="control-group">
+							<label class="control-label" for="textarea">Title</label>
+							<div class="controls">
+								<input size="16" type="text" value="Joomla Article Title">
+							</div>
+						</div>
+						<div class="control-group">
+							<h3>Content</h3>
+							<textarea style="width:100%;" id="textarea" rows="10">A integer integer integer. Sit porta quis ultricies nisi nunc? Non magnis ut egestas enim egestas hac mid integer, dignissim! Sagittis vel et in nec nascetur diam ridiculus turpis tincidunt enim pellentesque turpis, turpis! Ac ultrices magna phasellus elementum, tincidunt elementum purus placerat! Magna, rhoncus nascetur augue integer aenean sed aenean cras. </textarea>
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend>Images and Links</legend>
+						<div class="formelm control-group">
+							<label for="jform_images_image_intro" class="hasTip" title="">Article Image</label>
+							<div class="controls">
+								<div class="fltlft">
+									<input type="text" name="jform[images][image_intro]" id="jform_images_image_intro" value="" readonly="readonly">
+								</div>
+								<div class="btn-toolbar">
+									<div class="button2-left btn-group"> <a class="btn" title="Select" href="#"> Select</a> <a class="btn" title="Clear" href="#"> Clear</a> </div>
+								</div>
+							</div>
+						</div>
+						<div class="formelm control-group">
+							<label id="jform_images_image_intro_alt-lbl" for="jform_images_image_intro_alt" class="hasTip" title="">Alt text</label>
+							<div class="controls">
+								<input type="text" name="jform[images][image_intro_alt]" id="jform_images_image_intro_alt" value="" class="inputbox" size="20">
+							</div>
+						</div>
+						<div class="formelm control-group">
+							<label id="jform_images_image_intro_caption-lbl" for="jform_images_image_intro_caption" class="hasTip" title="">Caption</label>
+							<div class="controls">
+								<input type="text" name="jform[images][image_intro_caption]" id="jform_images_image_intro_caption" value="" class="inputbox" size="20">
+							</div>
+						</div>
+						<div class="formelm control-group">
+							<label id="jform_images_float_intro-lbl" for="jform_images_float_intro" class="hasTip" title="">Intro image float</label>
+							<div class="controls">
+								<select id="jform_images_float_intro" name="jform[images][float_intro]">
+									<option value="" selected="selected">Use Global</option>
+									<option value="right">Right</option>
+									<option value="left">Left</option>
+								</select>
+							</div>
+						</div>
+						<div class="formelm control-group">
+							<label id="jform_urls_urla-lbl" for="jform_urls_urla" class="hasTip" title="">Link A</label>
+							<div class="controls">
+								<input type="text" name="jform[urls][urla]" id="jform_urls_urla" value="">
+							</div>
+						</div>
+						<div class="formelm control-group">
+							<label id="jform_urls_urlatext-lbl" for="jform_urls_urlatext" class="hasTip" title="">Link A Text</label>
+							<div class="controls">
+								<input type="text" name="jform[urls][urlatext]" id="jform_urls_urlatext" value="" class="inputbox" size="20">
+							</div>
+						</div>
+						<input type="hidden" name="jform[urls][targeta]" id="jform_urls_targeta" value="">
+						<div class="formelm control-group">
+							<label id="jform_urls_urlb-lbl" for="jform_urls_urlb" class="hasTip" title="">Link B</label>
+							<div class="controls">
+								<input type="text" name="jform[urls][urlb]" id="jform_urls_urlb" value="">
+							</div>
+						</div>
+						<div class="formelm control-group">
+							<label id="jform_urls_urlbtext-lbl" for="jform_urls_urlbtext" class="hasTip" title="">Link B Text</label>
+							<div class="controls">
+								<input type="text" name="jform[urls][urlbtext]" id="jform_urls_urlbtext" value="" class="inputbox" size="20">
+							</div>
+						</div>
+						<input type="hidden" name="jform[urls][targetb]" id="jform_urls_targetb" value="">
+						<div class="formelm control-group">
+							<label id="jform_urls_urlc-lbl" for="jform_urls_urlc" class="hasTip" title="">Link C</label>
+							<div class="controls">
+								<input type="text" name="jform[urls][urlc]" id="jform_urls_urlc" value="">
+							</div>
+						</div>
+						<div class="formelm control-group">
+							<label id="jform_urls_urlctext-lbl" for="jform_urls_urlctext" class="hasTip" title="">Link C Text</label>
+							<div class="controls">
+								<input type="text" name="jform[urls][urlctext]" id="jform_urls_urlctext" value="" class="inputbox" size="20">
+							</div>
+						</div>
+						<div class="control-group">
+							<input type="hidden" name="jform[urls][targetc]" id="jform_urls_targetc" value="">
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend>Publishing</legend>
+						<div class="formelm control-group">
+							<label id="jform_catid-lbl" for="jform_catid" class="hasTip required" title="">Category<span class="star">&nbsp;*</span></label>
+							<div class="controls">
+								<select id="jform_catid" name="jform[catid]" class="inputbox required" aria-required="true" required="required">
+									<option value="14">- Sample Data-Articles</option>
+									<option value="19" selected="selected">- - Joomla!</option>
+									<option value="20">- - - Extensions</option>
+									<option value="21">- - - - Components</option>
+									<option value="22">- - - - Modules</option>
+									<option value="64">- - - - - Content Modules</option>
+									<option value="65">- - - - - User Modules</option>
+									<option value="66">- - - - - Display Modules</option>
+									<option value="67">- - - - - Utility Modules</option>
+									<option value="75">- - - - - Navigation Modules</option>
+									<option value="23">- - - - Templates</option>
+									<option value="69">- - - - - Beez 20</option>
+									<option value="70">- - - - - Beez 5</option>
+									<option value="68">- - - - - Atomic</option>
+									<option value="24">- - - - Languages</option>
+									<option value="25">- - - - Plugins</option>
+									<option value="26">- - Park Site</option>
+									<option value="27">- - - Park Blog</option>
+									<option value="28">- - - Photo Gallery</option>
+									<option value="72">- - - - Animals</option>
+									<option value="73">- - - - Scenery</option>
+									<option value="29">- - Fruit Shop Site</option>
+									<option value="30">- - - Growers</option>
+									<option value="76">- - - Recipes</option>
+									<option value="9">- Uncategorised</option>
+								</select>
+							</div>
+						</div>
+						<div class="formelm control-group">
+							<label id="jform_created_by_alias-lbl" for="jform_created_by_alias" class="hasTip" title="">Author's Alias</label>
+							<div class="controls">
+								<input type="text" name="jform[created_by_alias]" id="jform_created_by_alias" value="Joomla!" class="inputbox" size="20">
+							</div>
+						</div>
+						<div class="formelm control-group">
+							<label id="jform_state-lbl" for="jform_state" class="hasTip" title="">Status</label>
+							<div class="controls">
+								<select id="jform_state" name="jform[state]" class="inputbox" size="1">
+									<option value="1" selected="selected">Published</option>
+									<option value="0">Unpublished</option>
+									<option value="2">Archived</option>
+									<option value="-2">Trashed</option>
+								</select>
+							</div>
+						</div>
+						<div class="formelm control-group">
+							<label id="jform_featured-lbl" for="jform_featured" class="hasTip" title="">Featured</label>
+							<div class="controls">
+								<select id="jform_featured" name="jform[featured]" class="inputbox">
+									<option value="0">No</option>
+									<option value="1" selected="selected">Yes</option>
+								</select>
+							</div>
+						</div>
+						<div class="formelm control-group">
+							<label id="jform_publish_up-lbl" for="jform_publish_up" class="hasTip" title="">Start Publishing</label>
+							<div class="controls">
+								<input type="text" title="Saturday, 01 January 2011" name="jform[publish_up]" id="jform_publish_up" value="2011-01-01 00:00:01" size="22" class="inputbox">
+								<img src="/sauron/media/system/images/calendar.png" alt="Calendar" class="calendar" id="jform_publish_up_img"> </div>
+						</div>
+						<div class="formelm control-group">
+							<label id="jform_publish_down-lbl" for="jform_publish_down" class="hasTip" title="">Finish Publishing</label>
+							<div class="controls">
+								<input type="text" title="" name="jform[publish_down]" id="jform_publish_down" value="0000-00-00 00:00:00" size="22" class="inputbox">
+								<img src="/sauron/media/system/images/calendar.png" alt="Calendar" class="calendar" id="jform_publish_down_img"> </div>
+						</div>
+						<div class="formelm control-group">
+							<label id="jform_access-lbl" for="jform_access" class="hasTip" title="">Access</label>
+							<div class="controls">
+								<select id="jform_access" name="jform[access]" class="inputbox" size="1">
+									<option value="1" selected="selected">Public</option>
+									<option value="2">Registered</option>
+									<option value="3">Special</option>
+									<option value="4">Customer Access Level (Example)</option>
+								</select>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend>Language</legend>
+						<div class="formelm-area control-group">
+							<label id="jform_language-lbl" for="jform_language" class="hasTip" title="">Language</label>
+							<div class="controls">
+								<select id="jform_language" name="jform[language]" class="inputbox">
+									<option value="*" selected="selected">All</option>
+									<option value="en-GB">English (UK)</option>
+								</select>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend>Metadata</legend>
+						<div class="formelm-area control-group">
+							<label id="jform_metadesc-lbl" for="jform_metadesc" class="hasTip" title="">Meta Description</label>
+							<div class="controls">
+								<textarea name="jform[metadesc]" id="jform_metadesc" cols="50" rows="5" class="inputbox"></textarea>
+							</div>
+						</div>
+						<div class="formelm-area control-group">
+							<label id="jform_metakey-lbl" for="jform_metakey" class="hasTip" title="">Keywords</label>
+							<div class="controls">
+								<textarea name="jform[metakey]" id="jform_metakey" cols="50" rows="5" class="inputbox"></textarea>
+							</div>
+						</div>
+						<input type="hidden" name="task" value="">
+						<input type="hidden" name="return" value="aHR0cDovL2xvY2FsaG9zdC9zYXVyb24v">
+						<input type="hidden" name="b7e5bd452c30f2a63674868235e873e2" value="1">
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="modal-footer"> <a href="#" class="btn" data-dismiss="modal">Cancel</a> <a href="#" class="btn btn-primary" data-dismiss="modal">Save</a> </div>
+	</div>
+	<!-- Email Modal -->
+	<div class="modal fade" id="email-form">
+		<div class="modal-header"> <a class="close" data-dismiss="modal">×</a>
+			<h3>Email Joomla Article Title</h3>
+		</div>
+		<div class="modal-body">
+			<div class="form form-comment">
+				<form class="form-horizontal">
+					<fieldset>
+						<div class="control-group">
+							<label class="control-label" for="textarea">Email To</label>
+							<div class="controls">
+								<input type="text" value="">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="textarea">Sender</label>
+							<div class="controls">
+								<input type="text" value="Super User">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="textarea">Your Email</label>
+							<div class="controls">
+								<input type="text" value="email@email.com">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="textarea">Subject</label>
+							<div class="controls">
+								<input type="text" value="">
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="modal-footer"> 
+		<a href="#" class="btn" data-dismiss="modal">Cancel</a> 
+		<a href="#" class="btn btn-primary" data-dismiss="modal">Send</a> 
+		</div>
 	</div>
 </div>
 <!-- Le javascript --> 
