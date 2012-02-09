@@ -57,7 +57,7 @@
 
 /* Buttons */
 .btn-wide{
-	width: 90%;
+	width: 80%;
 }
 
 /* Nav List Offset */
@@ -81,10 +81,7 @@
 .row-even {
 	background-color: #f9f9f9;
 }
-/* Buttons */
-.btn-wide{
-	width: 99%;
-}
+
 .row-fluid .offset1 {
   margin-left: 8.382978723%;
 }
