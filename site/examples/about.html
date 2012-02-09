@@ -151,7 +151,7 @@
 			</form>
 		</div>
 		<div class="span6">
-			<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=+&amp;q=austin+texas&amp;ie=UTF8&amp;hq=&amp;hnear=Austin,+Travis,+Texas&amp;t=m&amp;z=11&amp;iwloc=A&amp;ll=30.267153,-97.743061&amp;output=embed"></iframe><br /><p><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=+&amp;q=austin+texas&amp;ie=UTF8&amp;hq=&amp;hnear=Austin,+Travis,+Texas&amp;t=m&amp;z=11&amp;iwloc=A&amp;ll=30.267153,-97.743061" style="color:#0000FF;text-align:left">View Larger Map</a></small></p>
+			<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=+&amp;q=austin+texas&amp;ie=UTF8&amp;hq=&amp;hnear=Austin,+Travis,+Texas&amp;t=m&amp;z=11&amp;iwloc=A&amp;ll=30.267153,-97.743061&amp;output=embed"></iframe><br /><p><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=+&amp;q=austin+texas&amp;ie=UTF8&amp;hq=&amp;hnear=Austin,+Travis,+Texas&amp;t=m&amp;z=11&amp;iwloc=A&amp;ll=30.267153,-97.743061">View Larger Map</a></small></p>
 		</div>
 	</div>
 	<hr />
@@ -161,7 +161,7 @@
 	</div>
 </div>
 <!-- Image Zoom Modal -->
-<div class="modal fade full" id="image-modal">
+<div class="modal fade" id="image-modal">
 	<div class="modal-header"> <a class="close" data-dismiss="modal">×</a>
 		<h3>Thumbnail Caption</h3>
 	</div>
@@ -183,22 +183,9 @@
   $('.tabs').button()
   $(".alert-message").alert()
   $(window).bind("load resize", function() {
-   var windowHeight = "max-height:"+($(window).height()-45)+"px"; // height of full document
+   var windowHeight = "height:"+($(window).height()-45)+"px"; // height of full document
    var windowWidth = "width:"+($(window).width()-30)+"px"; // width of full document
    $('.side-nav, .fluid-content.main, .modal.full').attr('style', windowHeight);
-  });
-  
-  $(document).ready(function(){
-  	// fade in #top
-	$(function () {
-		// scroll body to 0px on click
-		$('#back-top').click(function () {
-			$('body,html').animate({
-				scrollTop: 0
-			}, 600);
-			return false;
-		});
-	});
   });
 </script>
 </body>

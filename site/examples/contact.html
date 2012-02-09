@@ -8,26 +8,18 @@
 <link href="../../assets/css/bootstrap.extended.css" rel="stylesheet" type="text/css" />
 <link href="../assets/css/theme.css" rel="stylesheet" type="text/css" />
 <link href="../../assets/css/bootstrap.responsive.css" rel="stylesheet" type="text/css" />
-
 </head>
 <body>
 <!-- Top Navigation -->
 <div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
-		<div class="container"> 
-			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> 
-				<span class="icon-bar"></span> 
-				<span class="icon-bar"></span> 
-				<span class="icon-bar"></span> 
-			</a> 
-			<a class="brand" href="../../index.html">Joomla 3.0</a>
+		<div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand" href="../../index.html">Joomla 3.0</a>
 			<div class="nav-collapse">
 				<ul class="nav">
 					<li class=""><a href="../index.html">Home</a></li>
 					<li class=""><a href="about.html">About</a></li>
 					<li class="active"><a href="contact.html">Contact</a></li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Examples<b class="caret"></b></a>
+					<li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Examples<b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li class=""><a href="layouts/article.html">Article</a></li>
 							<li class=""><a href="layouts/article-pagebreak.html">Article with Pagebreaks</a></li>
@@ -45,19 +37,127 @@
 </div>
 <!-- Container -->
 <div class="container">
-	Contact
+	<div class="page-header">
+		<h1>Contact Us <small>Joomla Company Name</small></h1>
+	</div>
 	<div class="row">
-	
+		<div class="span6">
+			<h3>Contact Information</h3>
+			<hr />
+			<div class="row">
+				<div class="span6">
+					<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=+&amp;q=austin+texas&amp;ie=UTF8&amp;hq=&amp;hnear=Austin,+Travis,+Texas&amp;t=m&amp;z=11&amp;iwloc=A&amp;ll=30.267153,-97.743061&amp;output=embed"></iframe><br /><p style="margin-bottom:20px;"><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=+&amp;q=austin+texas&amp;ie=UTF8&amp;hq=&amp;hnear=Austin,+Travis,+Texas&amp;t=m&amp;z=11&amp;iwloc=A&amp;ll=30.267153,-97.743061">View Larger Map</a></small></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span3">
+					<p><strong>Address</strong></p>
+				</div>
+				<div class="span3">
+					<address>
+					<strong>Joomla Company, Inc.</strong><br />
+					12234 Some Address<br>
+					San Francisco, CA 94107<br>
+					</address>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span3">
+					<p><strong>Phone</strong></p>
+				</div>
+				<div class="span3">
+					<p> <abbr title="Phone">P:</abbr> (123) 456-7890<br />
+						<abbr title="Fax">F:</abbr> (123) 456-7891 </p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span3">
+					<p><strong>Email</strong></p>
+				</div>
+				<div class="span3">
+					<p> email@email.com </p>
+				</div>
+			</div>
+			<hr />
+			<div class="row">
+				<div class="span3">
+					<p><strong>Social</strong></p>
+				</div>
+				<div class="span3">
+					<ul class="thumbnails">
+						<li class=""> <a href="#" class="thumbnail"> <img src="../assets/img/icons/24/facebook.png" alt=""> </a> </li>
+						<li class=""> <a href="#" class="thumbnail"> <img src="../assets/img/icons/24/twitter.png" alt=""> </a> </li>
+						<li class=""> <a href="#" class="thumbnail"> <img src="../assets/img/icons/24/googleplus.png" alt=""> </a> </li>
+						<li class=""> <a href="#" class="thumbnail"> <img src="../assets/img/icons/24/youtube.png" alt=""> </a> </li>
+						<li class=""> <a href="#" class="thumbnail"> <img src="../assets/img/icons/24/vimeo.png" alt=""> </a> </li>
+						<li class=""> <a href="#" class="thumbnail"> <img src="../assets/img/icons/24/deviantart.png" alt=""> </a> </li>
+						<li class=""> <a href="#" class="thumbnail"> <img src="../assets/img/icons/24/tumblr.png" alt=""> </a> </li>
+						<li class=""> <a href="#" class="thumbnail"> <img src="../assets/img/icons/24/feedburner-2.png" alt=""> </a> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="span6">
+			<h3>Contact Form</h3>
+			<hr />
+			<form class="form-horizontal">
+				<fieldset>
+					<legend>Fill out the form</legend>
+					<div class="control-group">
+						<label class="control-label" for="input01">Email</label>
+						<div class="controls">
+							<input type="email" class="input-xlarge" id="input01">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="select01">Select Service</label>
+						<div class="controls">
+							<select id="select01">
+								<option>Design</option>
+								<option>Development</option>
+								<option>Marketing</option>
+								<option>Web Architecture</option>
+							</select>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="optionsCheckbox">Copy Me</label>
+						<div class="controls">
+							<label class="checkbox">
+								<input type="checkbox" id="optionsCheckbox" value="option1">
+								Send a copy to my email</label>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="fileInput">Upload Your Specs</label>
+						<div class="controls">
+							<input class="input-file" id="fileInput" type="file">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="textarea">More Notes</label>
+						<div class="controls">
+							<textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+						</div>
+					</div>
+					<div class="form-actions">
+						<button type="submit" class="btn btn-primary">Submit</button>
+						<button type="reset" class="btn">Cancel</button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
 	</div>
 	<hr />
 	<div class="footer">
-		
+		<p class="pull-right"><a href="#top" id="back-top">Back to top</a></p>
+		<p>&copy; Copyright JUI Project 2012, All rights reserved.</p>
 	</div>
 </div>
-<!-- Le javascript -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="../../assets/js/jquery-1.7.1.min.js"></script>
-<script src="../../assets/js/bootstrap.min.js"></script>
+<!-- Le javascript --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="../../assets/js/jquery-1.7.1.min.js"></script> 
+<script src="../../assets/js/bootstrap.min.js"></script> 
 <script type="text/javascript">
   $('.dropdown-toggle').dropdown()
   $('.collapse').collapse('show')
