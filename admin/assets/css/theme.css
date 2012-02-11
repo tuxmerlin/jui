@@ -17,7 +17,12 @@
 .small{
 	font-size: 11px;
 }
-
+.row-even .small,
+.row-odd .small,
+.row-even .small a,
+.row-odd .small a{
+	color: #888;
+}
 /* Navbar */
 .navbar{
 	margin-bottom: 0;
