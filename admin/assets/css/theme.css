@@ -9,7 +9,7 @@
  */
 
 /* Body */
-.admin body{
+body{
 	padding-top: 30px;
 }
 
@@ -24,7 +24,8 @@
 	color: #888;
 }
 /* Navbar */
-.navbar{
+body .navbar,
+body .navbar-fixed-top{
 	margin-bottom: 0;
 }
 .navbar-inner{
