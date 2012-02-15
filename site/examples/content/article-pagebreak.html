@@ -52,6 +52,41 @@
 		</div>
 	</div>
 </div>
+<!-- Header -->
+<div class="header">
+	<div class="header-inner">
+		<div class="container"> 
+			<a class="brand pull-left" href="../../index.html"><img src="../../assets/img/joomla.png" alt="Joomla" /></a>
+			<ul class="nav nav-pills pull-right">
+				<li class=""><a href="../../index.html">Home</a></li>
+				<li><a href="../about.html">About</a></li>
+				<li><a href="../contact.html">Contact</a></li>
+				<li class="active dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Content <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li class="active"><a href="article.html">Article</a></li>
+						<li class=""><a href="article-pagebreak.html">Article Page Breaks</a></li>
+						<li class=""><a href="blog.html">Blog</a></li>
+						<li class=""><a href="list.html">List</a></li>
+						<li class=""><a href="multi-column.html">Multi-column</a></li>
+						<li class=""><a href="table.html">Table</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Jomsocial <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li class=""><a href="../jomsocial/signup.html">Signup</a></li>
+						<li class=""><a href="../jomsocial/directory.html">Directory</a></li>
+						<li class=""><a href="../jomsocial/user-home.html">User Home</a></li>
+						<li class=""><a href="../jomsocial/photos.html">Photos</a></li>
+						<li class=""><a href="../jomsocial/videos.html">Videos</a></li>
+						<li class=""><a href="../jomsocial/events.html">Events</a></li>
+					</ul>
+				</li>
+			</ul>
+			<!--/.nav-collapse --> 
+		</div>
+	</div>
+</div>
 <!-- Container -->
 <div class="container">
 	<div class="row">
@@ -188,23 +223,14 @@
 				<fieldset>
 					<legend>Comment</legend>
 					<div class="control-group">
-						<label class="control-label" for="textarea">Email</label>
+						<label class="control-label" for="textarea">
+							<p>Comment</p>
+							<div class="thumbnail item-image pull-right">
+								<img src="http://placehold.it/60x60" alt="">
+							</div>
+						</label>
 						<div class="controls">
-							<input id="prependedInput" size="16" type="text">
-							<p class="help-block">Enter Your Email Address</p>
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label" for="textarea">Title</label>
-						<div class="controls">
-							<input size="16" type="text">
-							<p class="help-block">Enter a Title</p>
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label" for="textarea">Comment</label>
-						<div class="controls">
-							<textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+							<textarea class="item-comment input-xlarge disabled" id="disabledInput" rows="5" disabled="" placeholder="You must login to comment"></textarea>
 						</div>
 					</div>
 					<div class="control-group">
@@ -212,7 +238,7 @@
 						<div class="controls">
 							<label class="checkbox">
 								<input type="checkbox" id="optionsCheckbox" value="option1">
-								Send Comments to My Email</label>
+							</label>
 						</div>
 					</div>
 					<div class="form-actions">
@@ -238,29 +264,7 @@
 						</div>
 					</div>
 					<h3>Comment Title</h3>
-					<p><strong>email@email.com</strong></p>
-					<p>Porttitor nisi ultricies dignissim placerat vel augue risus porta mattis mid, arcu tristique augue porttitor et scelerisque, aliquam rhoncus, vut tristique tempor pulvinar! Urna non?</p>
-				</div>
-			</div>
-			<hr />
-			<div class="row-fluid item-comment">
-				<div class="span11 offset1">					
-					<a href="#" class="thumbnail item-image pull-left"> <img src="http://placehold.it/60x60" alt=""> </a>
-					<div class="btn-toolbar pull-right">
-						<div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i> <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#comment-edit-modal" data-toggle="modal"><i class="icon-pencil"></i> Edit</a></li>
-								<li><a href="#"><i class="icon-trash"></i> Delete</a></li>
-								<li class="divider"></li>
-								<li><a href="#reply-modal" data-toggle="modal"><i class="icon-share-alt"></i> Reply</a> </li>
-								<li><a href="#report-modal" data-toggle="modal"><i class="icon-exclamation-sign"></i> Report</a></li>
-								<li class="divider"></li>
-								<li><a href="#"><i class="icon-edit"></i> Edit in admin</a></li>
-							</ul>
-						</div>
-					</div>
-					<h3>Comment Title</h3>
-					<p><strong>email@email.com</strong></p>
+					<p><strong>Sandra Mae</strong></p>
 					<p>Porttitor nisi ultricies dignissim placerat vel augue risus porta mattis mid, arcu tristique augue porttitor et scelerisque, aliquam rhoncus, vut tristique tempor pulvinar! Urna non?</p>
 				</div>
 			</div>
@@ -282,11 +286,32 @@
 						</div>
 					</div>
 					<h3>Comment Title</h3>
-					<p><strong>email@email.com</strong></p>
+					<p><strong>John Doe</strong></p>
 					<p>Porttitor nisi ultricies dignissim placerat vel augue risus porta mattis mid, arcu tristique augue porttitor et scelerisque, aliquam rhoncus, vut tristique tempor pulvinar! Urna non?</p>
 				</div>
 			</div>
-			
+			<hr />
+			<div class="row-fluid item-comment">
+				<div class="span12">					
+					<a href="#" class="thumbnail item-image pull-left"> <img src="http://placehold.it/60x60" alt=""> </a>
+					<div class="btn-toolbar pull-right">
+						<div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i> <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#comment-edit-modal" data-toggle="modal"><i class="icon-pencil"></i> Edit</a></li>
+								<li><a href="#"><i class="icon-trash"></i> Delete</a></li>
+								<li class="divider"></li>
+								<li><a href="#reply-modal" data-toggle="modal"><i class="icon-share-alt"></i> Reply</a> </li>
+								<li><a href="#report-modal" data-toggle="modal"><i class="icon-exclamation-sign"></i> Report</a></li>
+								<li class="divider"></li>
+								<li><a href="#"><i class="icon-edit"></i> Edit in admin</a></li>
+							</ul>
+						</div>
+					</div>
+					<h3>Comment Title</h3>
+					<p><strong>Theo Huckstable</strong></p>
+					<p>Porttitor nisi ultricies dignissim placerat vel augue risus porta mattis mid, arcu tristique augue porttitor et scelerisque, aliquam rhoncus, vut tristique tempor pulvinar! Urna non?</p>
+				</div>
+			</div>
 			<div class="item-navigation">
 				<a class="smalltip pull-right" href="#" rel="popover" data-original-title="Navigation Between Items" data-placement="top">
 					<i class="icon-question-sign"></i>

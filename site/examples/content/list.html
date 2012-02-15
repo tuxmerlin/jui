@@ -3,17 +3,23 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>List</title>
+<title>Article</title>
 <link href="../../../assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
 <link href="../../../assets/css/bootstrap.extended.css" rel="stylesheet" type="text/css" />
 <link href="../../assets/css/theme.css" rel="stylesheet" type="text/css" />
 <link href="../../../assets/css/bootstrap.responsive.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<!-- Top Navigation -->
+<!-- Admin Toolbar  -->
 <div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
-		<div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand" href="../../../index.html">Joomla 3.0</a>
+		<div class="container"> 
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> 
+				<span class="icon-bar"></span> 
+				<span class="icon-bar"></span> 
+				<span class="icon-bar"></span> 
+			</a> 
+			<a class="brand" href="../../../index.html">Joomla 3.0</a>
 			<div class="nav-collapse">
 				<ul class="nav">
 					<li class=""><a href="../../index.html">Home</a></li>
@@ -22,9 +28,9 @@
 					<li class="active dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Content <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li class=""><a href="article.html">Article</a></li>
-							<li class=""><a href="article-pagebreak.html">Article with Pagebreaks</a></li>
-							<li class="active"><a href="list.html">List</a></li>
+							<li class=""><a href="article-pagebreak.html">Article Page Breaks</a></li>
 							<li class=""><a href="blog.html">Blog</a></li>
+							<li class="active"><a href="list.html">List</a></li>
 							<li class=""><a href="multi-column.html">Multi-column</a></li>
 							<li class=""><a href="table.html">Table</a></li>
 						</ul>
@@ -46,329 +52,319 @@
 		</div>
 	</div>
 </div>
+<!-- Header -->
+<div class="header">
+	<div class="header-inner">
+		<div class="container"> 
+			<a class="brand pull-left" href="../../index.html"><img src="../../assets/img/joomla.png" alt="Joomla" /></a>
+			<ul class="nav nav-pills pull-right">
+				<li class=""><a href="../../index.html">Home</a></li>
+				<li><a href="../about.html">About</a></li>
+				<li><a href="../contact.html">Contact</a></li>
+				<li class="active dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Content <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li class=""><a href="article.html">Article</a></li>
+						<li class=""><a href="article-pagebreak.html">Article Page Breaks</a></li>
+						<li class=""><a href="blog.html">Blog</a></li>
+						<li class="active"><a href="list.html">List</a></li>
+						<li class=""><a href="multi-column.html">Multi-column</a></li>
+						<li class=""><a href="table.html">Table</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Jomsocial <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li class=""><a href="../jomsocial/signup.html">Signup</a></li>
+						<li class=""><a href="../jomsocial/directory.html">Directory</a></li>
+						<li class=""><a href="../jomsocial/user-home.html">User Home</a></li>
+						<li class=""><a href="../jomsocial/photos.html">Photos</a></li>
+						<li class=""><a href="../jomsocial/videos.html">Videos</a></li>
+						<li class=""><a href="../jomsocial/events.html">Events</a></li>
+					</ul>
+				</li>
+			</ul>
+			<!--/.nav-collapse --> 
+		</div>
+	</div>
+</div>
 <!-- Container -->
 <div class="container">
 	<div class="row">
-		<div class="span2">
-			<ul class="nav nav-list" style="margin-bottom:18px;">
-				<li class="nav-header">Layouts</li>
-				<li class=""><a href="article.html">Article</a></li>
-				<li class=""><a href="article-pagebreak.html">Article with Pagebreaks</a></li>
-				<li class="active"><a href="list.html">List</a></li>
-				<li class=""><a href="blog.html">Blog</a></li>
-				<li class=""><a href="multi-column.html">Multi-column</a></li>
-				<li class=""><a href="table.html">Table</a></li>
-			</ul>
-			<div class="well">
-			<h5>Example List Layout</h5>
-			<p><small>Could be used for comments, or multiple nested subitems</small></p>
+		<div class="span3">
+			<div class="module">
+				<div class="module-content">
+					<ul class="nav nav-list">
+						<li class="nav-header">Content</li>
+						<li class=""><a href="article.html">Article</a></li>
+						<li class=""><a href="article-pagebreak.html">Article Page Breaks</a></li>
+						<li class=""><a href="blog.html">Blog</a></li>
+						<li class="active"><a href="list.html">List</a></li>
+						<li class=""><a href="multi-column.html">Multi-column</a></li>
+						<li class=""><a href="table.html">Table</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
-		<div class="span10">
-			<div class="item row-fluid"> 
-				<!-- Page Title -->
-				<div class="page-header page-title">
-					<h1>Joomla List</h1>
-				</div>
-				<div class="item-header"> 
-					<!-- Table Title -->
-					<h2 class="item-title">Joomla List</h2>
-				</div>
-				
-				
-				<div class="row-fluid level-1">
-					<div class="span12">
-						<h3>Joomla! Category</h3>
-						<p><strong>Article Count: 11</strong></p>
-						<p>Sit non sociis, in dictumst sagittis dignissim mauris sagittis! Habitasse rhoncus risus lundium vut elementum purus tempor arcu purus natoque, urna. Mauris lorem augue turpis. Vel urna vel, auctor. Nec nisi eros lorem porta, ridiculus augue! Nascetur tristique, dis lectus! Et eros, phasellus placerat? Porta, scelerisque odio turpis, sit facilisis enim ac! Augue eu enim nisi, pellentesque. Pulvinar, hac, proin? Cras egestas mattis nec? Lorem aenean mid integer eros adipiscing? Ridiculus scelerisque, sed et lectus. Purus quis, porttitor? Odio enim vel urna in velit, in diam sit, ac mattis magnis mid in turpis turpis augue, mauris, habitasse sed lorem! Amet pellentesque penatibus! Phasellus purus nunc amet porta sed! Tortor dolor? Augue elementum, integer lectus. A duis, mus, parturient tristique? Turpis.</p>
-					</div>
-				</div>
-				<div class="row-fluid level-2">
-					<div class="span1">
-						&nbsp;
-					</div>
-					<div class="span11">
-						<h3>Joomla! Category</h3>
-						<p><strong>Article Count: 11</strong></p>
-						<p>Sit non sociis, in dictumst sagittis dignissim mauris sagittis! Habitasse rhoncus risus lundium vut elementum purus tempor arcu purus natoque, urna. Mauris lorem augue turpis. Vel urna vel, auctor. Nec nisi eros lorem porta, ridiculus augue! Nascetur tristique, dis lectus! Et eros, phasellus placerat? Porta, scelerisque odio turpis, sit facilisis enim ac! Augue eu enim nisi, pellentesque. Pulvinar, hac, proin? Cras egestas mattis nec? Lorem aenean mid integer eros adipiscing? Ridiculus scelerisque, sed et lectus. Purus quis, porttitor? Odio enim vel urna in velit, in diam sit, ac mattis magnis mid in turpis turpis augue, mauris, habitasse sed lorem! Amet pellentesque penatibus! Phasellus purus nunc amet porta sed! Tortor dolor? Augue elementum, integer lectus. A duis, mus, parturient tristique? Turpis.</p>
-					</div>
-				</div>
-				<div class="row-fluid level-3">
-					<div class="span2">
-						&nbsp;
-					</div>
-					<div class="span10">
-						<h3>Joomla! Category</h3>
-						<p><strong>Article Count: 11</strong></p>
-						<p>Sit non sociis, in dictumst sagittis dignissim mauris sagittis! Habitasse rhoncus risus lundium vut elementum purus tempor arcu purus natoque, urna. Mauris lorem augue turpis. Vel urna vel, auctor. Nec nisi eros lorem porta, ridiculus augue! Nascetur tristique, dis lectus! Et eros, phasellus placerat? Porta, scelerisque odio turpis, sit facilisis enim ac! Augue eu enim nisi, pellentesque. Pulvinar, hac, proin? Cras egestas mattis nec? Lorem aenean mid integer eros adipiscing? Ridiculus scelerisque, sed et lectus. Purus quis, porttitor? Odio enim vel urna in velit, in diam sit, ac mattis magnis mid in turpis turpis augue, mauris, habitasse sed lorem! Amet pellentesque penatibus! Phasellus purus nunc amet porta sed! Tortor dolor? Augue elementum, integer lectus. A duis, mus, parturient tristique? Turpis.</p>
-					</div>
-				</div>
-				
-				
-				
-				
-				<div class="row-fluid level-1">
-					<div class="span2">
-						<ul class="thumbnails">
-							<li> <a href="#" class="thumbnail"> <img src="http://placehold.it/260x180" alt=""> </a> </li>
-						</ul>
-					</div>
-					<div class="span10">
-						<h3>Comment Title</h3>
-						<p><strong>email@email.com</strong></p>
-						<p>Porttitor nisi ultricies dignissim placerat vel augue risus porta mattis mid, arcu tristique augue porttitor et scelerisque, aliquam rhoncus, vut tristique tempor pulvinar! Urna non?</p>
-						<div class="btn-toolbar">
-							<div class="btn-group"> <a href="#reply-modal" data-toggle="modal" class="btn"><i class="icon-share-alt"></i> Reply</a> <a href="#report-modal" data-toggle="modal" class="btn"><i class="icon-exclamation-sign"></i> Report</a> </div>
-							<div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i> <span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="#comment-edit-modal" data-toggle="modal"><i class="icon-pencil"></i> Edit</a></li>
-									<li><a href="#"><i class="icon-trash"></i> Delete</a></li>
-									<li class="divider"></li>
-									<li><a href="#"><i class="i"></i> Edit in admin</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="row-fluid level-2">
-					<div class="span1">
-					&nbsp;
-					</div>
-					<div class="span2">
-						<ul class="thumbnails">
-							<li> <a href="#" class="thumbnail"> <img src="http://placehold.it/260x180" alt=""> </a> </li>
-						</ul>
-					</div>
-					<div class="span9">
-						<h3>Comment Title</h3>
-						<p><strong>email@email.com</strong></p>
-						<p>Porttitor nisi ultricies dignissim placerat vel augue risus porta mattis mid, arcu tristique augue porttitor et scelerisque, aliquam rhoncus, vut tristique tempor pulvinar! Urna non?</p>
-						<div class="btn-toolbar">
-							<div class="btn-group"> <a href="#reply-modal" data-toggle="modal" class="btn"><i class="icon-share-alt"></i> Reply</a> <a href="#report-modal" data-toggle="modal" class="btn"><i class="icon-exclamation-sign"></i> Report</a> </div>
-							<div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i> <span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="#comment-edit-modal" data-toggle="modal"><i class="icon-pencil"></i> Edit</a></li>
-									<li><a href="#"><i class="icon-trash"></i> Delete</a></li>
-									<li class="divider"></li>
-									<li><a href="#"><i class="i"></i> Edit in admin</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				
-				<div class="row-fluid level-3">
-					<div class="span2">
-					&nbsp;
-					</div>
-					<div class="span2">
-						<ul class="thumbnails">
-							<li> <a href="#" class="thumbnail"> <img src="http://placehold.it/260x180" alt=""> </a> </li>
-						</ul>
-					</div>
-					<div class="span8">
-						<h3>Comment Title</h3>
-						<p><strong>email@email.com</strong></p>
-						<p>Porttitor nisi ultricies dignissim placerat vel augue risus porta mattis mid, arcu tristique augue porttitor et scelerisque, aliquam rhoncus, vut tristique tempor pulvinar! Urna non?</p>
-						<div class="btn-toolbar">
-							<div class="btn-group"> <a href="#reply-modal" data-toggle="modal" class="btn"><i class="icon-share-alt"></i> Reply</a> <a href="#report-modal" data-toggle="modal" class="btn"><i class="icon-exclamation-sign"></i> Report</a> </div>
-							<div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i> <span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="#comment-edit-modal" data-toggle="modal"><i class="icon-pencil"></i> Edit</a></li>
-									<li><a href="#"><i class="icon-trash"></i> Delete</a></li>
-									<li class="divider"></li>
-									<li><a href="#"><i class="i"></i> Edit in admin</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-				</div>
-				
-				
-				<div class="row-fluid level-2">
-					<div class="span1">
-					&nbsp;
-					</div>
-					<div class="span2">
-						<ul class="thumbnails">
-							<li> <a href="#" class="thumbnail"> <img src="http://placehold.it/260x180" alt=""> </a> </li>
-						</ul>
-					</div>
-					<div class="span9">
-						<h3>Comment Title</h3>
-						<p><strong>email@email.com</strong></p>
-						<p>Porttitor nisi ultricies dignissim placerat vel augue risus porta mattis mid, arcu tristique augue porttitor et scelerisque, aliquam rhoncus, vut tristique tempor pulvinar! Urna non?</p>
-						<div class="btn-toolbar">
-							<div class="btn-group"> <a href="#reply-modal" data-toggle="modal" class="btn"><i class="icon-share-alt"></i> Reply</a> <a href="#report-modal" data-toggle="modal" class="btn"><i class="icon-exclamation-sign"></i> Report</a> </div>
-							<div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i> <span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="#comment-edit-modal" data-toggle="modal"><i class="icon-pencil"></i> Edit</a></li>
-									<li><a href="#"><i class="icon-trash"></i> Delete</a></li>
-									<li class="divider"></li>
-									<li><a href="#"><i class="i"></i> Edit in admin</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="row-fluid level-2">
-					<div class="span1">
-					&nbsp;
-					</div>
-					<div class="span2">
-						<ul class="thumbnails">
-							<li> <a href="#" class="thumbnail"> <img src="http://placehold.it/260x180" alt=""> </a> </li>
-						</ul>
-					</div>
-					<div class="span9">
-						<h3>Comment Title</h3>
-						<p><strong>email@email.com</strong></p>
-						<p>Porttitor nisi ultricies dignissim placerat vel augue risus porta mattis mid, arcu tristique augue porttitor et scelerisque, aliquam rhoncus, vut tristique tempor pulvinar! Urna non?</p>
-						<div class="btn-toolbar">
-							<div class="btn-group"> <a href="#reply-modal" data-toggle="modal" class="btn"><i class="icon-share-alt"></i> Reply</a> <a href="#report-modal" data-toggle="modal" class="btn"><i class="icon-exclamation-sign"></i> Report</a> </div>
-							<div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i> <span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="#comment-edit-modal" data-toggle="modal"><i class="icon-pencil"></i> Edit</a></li>
-									<li><a href="#"><i class="icon-trash"></i> Delete</a></li>
-									<li class="divider"></li>
-									<li><a href="#"><i class="i"></i> Edit in admin</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				
+		<div class="span9">
+			<div class="page-header">
+				<h1>
+					List Layout
+					<a class="smalltip" href="#" rel="popover" data-original-title="Page Title" data-placement="top">
+						<i class="icon-question-sign"></i>
+					</a>
+				</h1>
 			</div>
-		</div>
-	</div>
+			<div class="row-fluid list-filter">
+				<form class="form-search">
+					<div class="form-search pull-left">
+					<label class="help-inline">Search Filter</label>
+					<input type="text" class="form-input input-medium">
+					<button type="submit" class="btn">Filter</button>
+					</div>
+					<div class="form-order pull-right">
+						<select id="limit" name="limit" class="form-input input-small pull-right" size="1" onchange="this.form.submit()">
+							<option value="5" selected="selected">Display</option>
+							<option value="5">5</option>
+							<option value="10">10</option>
+							<option value="15">15</option>
+							<option value="20">20</option>
+							<option value="25">25</option>
+							<option value="30">30</option>
+							<option value="50">50</option>
+							<option value="100">100</option>
+							<option value="0">All</option>
+						</select>						
+					</div>
+				</form>
+			</div>
+			<hr />
+			<div class="row-fluid list-item">
+				<div class="span12">					
+					<div class="item-actions btn-toolbar pull-right"> 
+						<div class="btn-group"> 
+							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+								<i class="icon-cog"></i> <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#edit-article" data-toggle="modal" title="Edit"><i class="icon-pencil"></i> Edit</a></li>
+								<li><a href="#" title="Delete"><i class="icon-trash"></i> Delete</a></li>
+								<li><a href="#" title="Feature"><i class="icon-star"></i> Feature</a></li>
+								<li class="divider"></li>
+								<li><a href="print.html" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"> <i class="icon-print"></i> Print </a> </li>
+								<li><a data-toggle="modal" href="#email-form" title="Email" rel="nofollow"> <i class="icon-envelope"></i> Email </a> </li>
+								<li><a href="#comment" title="Comment" onclick="#" rel="nofollow"> <i class="icon-comment"></i> Comment (5)</a> </li>
+								<li><a data-toggle="modal" href="#share-form" title="Share" rel="nofollow"> <i class="icon-share-alt"></i> Share </a> </li>
+								<li class="divider"></li>
+								<li><a href="../../../admin/examples/com_pages_create_1.html"><i class="icon-edit"></i> Edit in admin</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="#" class="thumbnail item-image pull-left"> <img src="http://placehold.it/60x60" alt=""> </a>
+					<h3 class="list-item-title">
+						List Item Title 
+					</h3> 	
+					<p class="list-item-info">
+						<span class="list-item-count">
+							<i class="icon-list"></i> Article Count: 11</a> 
+						</span>
+					</p>
+					<p class="list-item-description">Porttitor nisi ultricies dignissim placerat vel augue risus porta mattis mid, arcu tristique augue porttitor et scelerisque, aliquam rhoncus, vut tristique tempor pulvinar! Urna non?</p>
+				</div>
+			</div>
+			<hr />
+			<div class="row-fluid list-item">
+				<div class="span11 offset1">					
+					<div class="item-actions btn-toolbar pull-right"> 
+						<div class="btn-group"> 
+							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+								<i class="icon-cog"></i> <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#edit-article" data-toggle="modal" title="Edit"><i class="icon-pencil"></i> Edit</a></li>
+								<li><a href="#" title="Delete"><i class="icon-trash"></i> Delete</a></li>
+								<li><a href="#" title="Feature"><i class="icon-star"></i> Feature</a></li>
+								<li class="divider"></li>
+								<li><a href="print.html" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"> <i class="icon-print"></i> Print </a> </li>
+								<li><a data-toggle="modal" href="#email-form" title="Email" rel="nofollow"> <i class="icon-envelope"></i> Email </a> </li>
+								<li><a href="#comment" title="Comment" onclick="#" rel="nofollow"> <i class="icon-comment"></i> Comment (5)</a> </li>
+								<li><a data-toggle="modal" href="#share-form" title="Share" rel="nofollow"> <i class="icon-share-alt"></i> Share </a> </li>
+								<li class="divider"></li>
+								<li><a href="../../../admin/examples/com_pages_create_1.html"><i class="icon-edit"></i> Edit in admin</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="#" class="thumbnail item-image pull-left"> <img src="http://placehold.it/60x60" alt=""> </a>
+					<h3 class="list-item-title">
+						List Item Title 
+					</h3> 	
+					<p class="list-item-info">
+						<span class="list-item-count">
+							<i class="icon-list"></i> Article Count: 11</a> 
+						</span>
+					</p>
+					<p class="list-item-description">Porttitor nisi ultricies dignissim placerat vel augue risus porta mattis mid, arcu tristique augue porttitor et scelerisque, aliquam rhoncus, vut tristique tempor pulvinar! Urna non?</p>
+				</div>
+			</div>
+			<hr />
+			<div class="row-fluid list-item">
+				<div class="span10 offset2">					
+					<div class="item-actions btn-toolbar pull-right"> 
+						<div class="btn-group"> 
+							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+								<i class="icon-cog"></i> <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#edit-article" data-toggle="modal" title="Edit"><i class="icon-pencil"></i> Edit</a></li>
+								<li><a href="#" title="Delete"><i class="icon-trash"></i> Delete</a></li>
+								<li><a href="#" title="Feature"><i class="icon-star"></i> Feature</a></li>
+								<li class="divider"></li>
+								<li><a href="print.html" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"> <i class="icon-print"></i> Print </a> </li>
+								<li><a data-toggle="modal" href="#email-form" title="Email" rel="nofollow"> <i class="icon-envelope"></i> Email </a> </li>
+								<li><a href="#comment" title="Comment" onclick="#" rel="nofollow"> <i class="icon-comment"></i> Comment (5)</a> </li>
+								<li><a data-toggle="modal" href="#share-form" title="Share" rel="nofollow"> <i class="icon-share-alt"></i> Share </a> </li>
+								<li class="divider"></li>
+								<li><a href="../../../admin/examples/com_pages_create_1.html"><i class="icon-edit"></i> Edit in admin</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="#" class="thumbnail item-image pull-left"> <img src="http://placehold.it/60x60" alt=""> </a>
+					<h3 class="list-item-title">
+						List Item Title 
+					</h3> 	
+					<p class="list-item-info">
+						<span class="list-item-count">
+							<i class="icon-list"></i> Article Count: 11</a> 
+						</span>
+					</p>
+					<p class="list-item-description">Porttitor nisi ultricies dignissim placerat vel augue risus porta mattis mid, arcu tristique augue porttitor et scelerisque, aliquam rhoncus, vut tristique tempor pulvinar! Urna non?</p>
+				</div>
+			</div>
+			<hr />
+			<div class="row-fluid list-item">
+				<div class="span12">					
+					<div class="item-actions btn-toolbar pull-right"> 
+						<div class="btn-group"> 
+							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+								<i class="icon-cog"></i> <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#edit-article" data-toggle="modal" title="Edit"><i class="icon-pencil"></i> Edit</a></li>
+								<li><a href="#" title="Delete"><i class="icon-trash"></i> Delete</a></li>
+								<li><a href="#" title="Feature"><i class="icon-star"></i> Feature</a></li>
+								<li class="divider"></li>
+								<li><a href="print.html" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"> <i class="icon-print"></i> Print </a> </li>
+								<li><a data-toggle="modal" href="#email-form" title="Email" rel="nofollow"> <i class="icon-envelope"></i> Email </a> </li>
+								<li><a href="#comment" title="Comment" onclick="#" rel="nofollow"> <i class="icon-comment"></i> Comment (5)</a> </li>
+								<li><a data-toggle="modal" href="#share-form" title="Share" rel="nofollow"> <i class="icon-share-alt"></i> Share </a> </li>
+								<li class="divider"></li>
+								<li><a href="../../../admin/examples/com_pages_create_1.html"><i class="icon-edit"></i> Edit in admin</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="#" class="thumbnail item-image pull-left"> <img src="http://placehold.it/60x60" alt=""> </a>
+					<h3 class="list-item-title">
+						List Item Title 
+					</h3> 	
+					<p class="list-item-info">
+						<span class="list-item-count">
+							<i class="icon-list"></i> Article Count: 11</a> 
+						</span>
+					</p>
+					<p class="list-item-description">Porttitor nisi ultricies dignissim placerat vel augue risus porta mattis mid, arcu tristique augue porttitor et scelerisque, aliquam rhoncus, vut tristique tempor pulvinar! Urna non?</p>
+				</div>
+			</div>
+			<hr />
+			<div class="row-fluid list-item">
+				<div class="span11 offset1">					
+					<div class="item-actions btn-toolbar pull-right"> 
+						<div class="btn-group"> 
+							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+								<i class="icon-cog"></i> <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#edit-article" data-toggle="modal" title="Edit"><i class="icon-pencil"></i> Edit</a></li>
+								<li><a href="#" title="Delete"><i class="icon-trash"></i> Delete</a></li>
+								<li><a href="#" title="Feature"><i class="icon-star"></i> Feature</a></li>
+								<li class="divider"></li>
+								<li><a href="print.html" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"> <i class="icon-print"></i> Print </a> </li>
+								<li><a data-toggle="modal" href="#email-form" title="Email" rel="nofollow"> <i class="icon-envelope"></i> Email </a> </li>
+								<li><a href="#comment" title="Comment" onclick="#" rel="nofollow"> <i class="icon-comment"></i> Comment (5)</a> </li>
+								<li><a data-toggle="modal" href="#share-form" title="Share" rel="nofollow"> <i class="icon-share-alt"></i> Share </a> </li>
+								<li class="divider"></li>
+								<li><a href="../../../admin/examples/com_pages_create_1.html"><i class="icon-edit"></i> Edit in admin</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="#" class="thumbnail item-image pull-left"> <img src="http://placehold.it/60x60" alt=""> </a>
+					<h3 class="list-item-title">
+						List Item Title 
+					</h3> 	
+					<p class="list-item-info">
+						<span class="list-item-count">
+							<i class="icon-list"></i> Article Count: 11</a> 
+						</span>
+					</p>
+					<p class="list-item-description">Porttitor nisi ultricies dignissim placerat vel augue risus porta mattis mid, arcu tristique augue porttitor et scelerisque, aliquam rhoncus, vut tristique tempor pulvinar! Urna non?</p>
+				</div>
+			</div>
+			<hr />
+			<div class="list-navigation">
+				<a class="smalltip pull-right" href="#" rel="popover" data-original-title="Navigation Between Items" data-placement="top">
+					<i class="icon-question-sign"></i>
+				</a>
+				<div class="pagination">
+					<ul>
+						<li><a href="#">Previous</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li class="disabled"><a href="#">...</a></li>
+						<li><a href="#">Next</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>		
+	</div>	
 	<hr />
 	<div class="footer">
 		<p class="pull-right"><a href="#top" id="back-top">Back to top</a></p>
 		<p>&copy; Copyright JUI Project 2012, All rights reserved.</p>
 	</div>
-	
-	<!-- Modals 
-	===================================================================--> 
-	<!-- Report Form Modal -->
-	<div class="modal fade" id="report-modal">
-		<div class="modal-header"> <a class="close" data-dismiss="modal">×</a>
-			<h3>Report</h3>
-		</div>
-		<div class="modal-body">
-			<div class="form form-comment">
-				<form class="form-horizontal">
-					<fieldset>
-						<div class="control-group">
-							<label class="control-label" for="textarea">Select a Reason</label>
-							<div class="controls">
-								<select>
-									<option value="6">Spam</option>
-									<option value="1">Sexual Content</option>
-									<option value="2">Violent or Repulsive Content</option>
-									<option value="3">Hateful or Abusive Content</option>
-									<option value="4">Harmful Acts</option>
-									<option value="7">Infringes my Rights</option>
-								</select>
-							</div>
-						</div>
-						<div class="control-group">
-							<label class="control-label" for="textarea">Notes</label>
-							<div class="controls">
-								<textarea class="input-xlarge" id="textarea" rows="3"></textarea>
-							</div>
-						</div>
-					</fieldset>
-				</form>
-			</div>
-		</div>
-		<div class="modal-footer"> <a href="#" class="btn btn-primary" data-dismiss="modal">Report</a> <a href="#" class="btn" data-dismiss="modal">Cancel</a> </div>
-	</div>
-	
-	<!-- Edit Comment Modal -->
-	<div class="modal fade" id="comment-edit-modal">
-		<div class="modal-header"> <a class="close" data-dismiss="modal">×</a>
-			<h3>Edit This Comment</h3>
-		</div>
-		<div class="modal-body">
-			<div class="form form-comment">
-				<form class="form-horizontal">
-					<fieldset>
-						<div class="control-group">
-							<label class="control-label" for="textarea">Title</label>
-							<div class="controls">
-								<input type="text" value="Comment Title">
-							</div>
-						</div>
-						<div class="control-group">
-							<label class="control-label" for="textarea">Comment</label>
-							<div class="controls">
-								<textarea class="input-xlarge" rows="5">Porttitor nisi ultricies dignissim placerat vel augue risus porta mattis mid, arcu tristique augue porttitor et scelerisque, aliquam rhoncus, vut tristique tempor pulvinar! Urna non?</textarea>
-							</div>
-						</div>
-					</fieldset>
-				</form>
-			</div>
-		</div>
-		<div class="modal-footer"> <a href="#" class="btn btn-primary" data-dismiss="modal">Save</a> <a href="#" class="btn" data-dismiss="modal">Cancel</a> </div>
-	</div>
-	<!-- Reply Form Modal -->
-	<div class="modal fade" id="reply-modal">
-		<div class="modal-header"> <a class="close" data-dismiss="modal">×</a>
-			<h3>Reply</h3>
-		</div>
-		<div class="modal-body">
-			<div class="form form-comment">
-				<form class="form-horizontal">
-					<fieldset>
-						<div class="control-group">
-							<label class="control-label" for="textarea">Email</label>
-							<div class="controls">
-								<input id="prependedInput" size="16" type="text">
-								<p class="help-block">Enter Your Email Address</p>
-							</div>
-						</div>
-						<div class="control-group">
-							<label class="control-label" for="textarea">Comment</label>
-							<div class="controls">
-								<textarea class="input-xlarge" id="textarea" rows="3"></textarea>
-							</div>
-						</div>
-						<div class="control-group">
-							<label class="control-label" for="optionsCheckbox">Email</label>
-							<div class="controls">
-								<label class="checkbox">
-									<input type="checkbox" id="optionsCheckbox" value="option1">
-									Send Comments to My Email</label>
-							</div>
-						</div>
-					</fieldset>
-				</form>
-			</div>
-		</div>
-		<div class="modal-footer"> <a href="#" class="btn btn-primary" data-dismiss="modal">Comment</a> <a href="#" class="btn" data-dismiss="modal">Cancel</a> </div>
-	</div>
+</div>
+<!-- Image Thumbnail Modal -->
+<div id="thumbnail" class="modal fade">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3>Example of Work</h3>
+  </div>
+  <div class="modal-body">
+    <p><img src="http://placehold.it/543x300" alt=""></p>
+  </div>
 </div>
 <!-- Le javascript --> 
 <!-- Placed at the end of the document so the pages load faster --> 
 <script src="../../../assets/js/jquery-1.7.1.min.js"></script> 
 <script src="../../../assets/js/bootstrap.min.js"></script> 
 <script type="text/javascript">
-  $('.dropdown-toggle').dropdown()
-  $('.collapse').collapse()
-  $('.modal').modal('hide')
-  $('.typeahead').typeahead()
-  $('.tabs').button()
-  $(".alert-message").alert()
-  $(window).bind("load resize", function() {
-   var windowHeight = "height:"+($(window).height()-45)+"px"; // height of full document
-   var windowWidth = "width:"+($(window).width()-30)+"px"; // width of full document
-   $('.side-nav, .fluid-content.main, .modal.full').attr('style', windowHeight);
-  });
+	$('.dropdown-toggle').dropdown()
+	$('.collapse').collapse()
+	$('.modal').modal('hide')
+	$('.tip').popover('hide')
+	$('.smalltip').tooltip('hide')
+	$('.typeahead').typeahead()
+	$('.tabs').button()
+	$(".alert-message").alert()
+	$(window).bind("load resize", function() {
+	var windowHeight = "height:"+($(window).height()-45)+"px"; // height of full document
+	var windowWidth = "width:"+($(window).width()-30)+"px"; // width of full document
+	$('.side-nav, .fluid-content.main, .modal.full').attr('style', windowHeight);
+	});
+	$(document).ready(function() {
+		$(".smalltip").hide();
+        $(".hidetip").click(function(){
+           $(".smalltip").toggle("slow");
+        });
+	});	
 </script>
 </body>
 </html>
