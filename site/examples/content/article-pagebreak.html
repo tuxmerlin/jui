@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Article</title>
+<link href="../../../assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="../../../assets/css/bootstrap.extended.css" rel="stylesheet" type="text/css" />
+<link href="../../assets/css/theme.css" rel="stylesheet" type="text/css" />
+<link href="../../../assets/css/bootstrap.responsive.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!-- Admin Toolbar  -->
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container"> 
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> 
+				<span class="icon-bar"></span> 
+				<span class="icon-bar"></span> 
+				<span class="icon-bar"></span> 
+			</a> 
+			<a class="brand" href="../../../index.html">Joomla 3.0</a>
+			<div class="nav-collapse">
+				<ul class="nav">
+					<li class=""><a href="../../index.html">Home</a></li>
+					<li><a href="../about.html">About</a></li>
+					<li><a href="../contact.html">Contact</a></li>
+					<li class="active dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Content <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class=""><a href="article.html">Article</a></li>
+							<li class="active"><a href="article-pagebreak.html">Article Page Breaks</a></li>
+							<li class=""><a href="blog.html">Blog</a></li>
+							<li class=""><a href="list.html">List</a></li>
+							<li class=""><a href="multi-column.html">Multi-column</a></li>
+							<li class=""><a href="table.html">Table</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Jomsocial <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class=""><a href="../jomsocial/signup.html">Signup</a></li>
+							<li class=""><a href="../jomsocial/directory.html">Directory</a></li>
+							<li class=""><a href="../jomsocial/user-home.html">User Home</a></li>
+							<li class=""><a href="../jomsocial/photos.html">Photos</a></li>
+							<li class=""><a href="../jomsocial/videos.html">Videos</a></li>
+							<li class=""><a href="../jomsocial/events.html">Events</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!--/.nav-collapse --> 
+		</div>
+	</div>
+</div>
+<!-- Container -->
+<div class="container">
+	<div class="row">
+		<div class="span3">
+			<div class="module">
+				<div class="module-content">
+					<ul class="nav nav-list">
+						<li class="nav-header">Content</li>
+						<li class=""><a href="article.html">Article</a></li>
+						<li class="active"><a href="article-pagebreak.html">Article Page Breaks</a></li>
+						<li class=""><a href="blog.html">Blog</a></li>
+						<li class=""><a href="list.html">List</a></li>
+						<li class=""><a href="multi-column.html">Multi-column</a></li>
+						<li class=""><a href="table.html">Table</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="span9">
+			<div class="page-header">
+				<h1>
+					About John Doe
+					<a class="smalltip" href="#" rel="popover" data-original-title="Page Title" data-placement="top">
+						<i class="icon-question-sign"></i>
+					</a>
+				</h1>
+			</div>
+			<div class="item-actions btn-toolbar pull-right"> 
+				<div class="btn-group"> 
+					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+						<i class="icon-cog"></i> <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#edit-article" data-toggle="modal" title="Edit"><i class="icon-pencil"></i> Edit</a></li>
+						<li><a href="#" title="Delete"><i class="icon-trash"></i> Delete</a></li>
+						<li><a href="#" title="Feature"><i class="icon-star"></i> Feature</a></li>
+						<li class="divider"></li>
+						<li><a href="print.html" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"> <i class="icon-print"></i> Print </a> </li>
+						<li><a data-toggle="modal" href="#email-form" title="Email" rel="nofollow"> <i class="icon-envelope"></i> Email </a> </li>
+						<li><a href="#comment" title="Comment" onclick="#" rel="nofollow"> <i class="icon-comment"></i> Comment (5)</a> </li>
+						<li><a data-toggle="modal" href="#share-form" title="Share" rel="nofollow"> <i class="icon-share-alt"></i> Share </a> </li>
+						<li class="divider"></li>
+						<li><a href="../../../admin/examples/com_pages_create_1.html"><i class="icon-edit"></i> Edit in admin</a></li>
+					</ul>
+				</div>
+			</div>
+			<h2 class="item-title">
+				A Little About Me 
+				<a class="smalltip" href="#" rel="popover" data-original-title="Item Title" data-placement="top">
+					<i class="icon-question-sign"></i>
+				</a>
+			</h2> 	
+			<p class="item-info">
+				<span class="item-author">
+					<i class="icon-user"></i> By <a href="#" >John Doe</a> 
+				</span>
+				<span class="item-create">
+					on <i class="icon-time"></i> 01/20/2012 
+				</span> 
+				<a class="smalltip" href="#" rel="popover" data-original-title="Item Info" data-placement="top">
+					<i class="icon-question-sign"></i>
+				</a>
+			</p>
+			<div class="item-content">
+				<h3 class="item-subtitle">
+					I'm a jack of all trades and I love Joomla
+					<a class="smalltip" href="#" rel="popover" data-original-title="Pagebreaks in an Item" data-placement="top">
+						<i class="icon-question-sign"></i>
+					</a>
+				</h3>
+				<div class="tabbable">
+					<ul class="nav nav-tabs">
+					<li class="active"><a href="#lA" data-toggle="tab">About Me</a></li>
+					<li><a href="#lB" data-toggle="tab">My Skills</a></li>
+					<li><a href="#lC" data-toggle="tab">My Hobbies</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane fade in active" id="lA">
+							<p>Aenean dis enim cras? Sagittis scelerisque, risus a. Cum aenean quis nunc! Massa adipiscing hac turpis, dictumst vel magna porttitor, eros, nec enim nisi. Integer tincidunt integer nunc penatibus lectus, vel sed? Hac, et, augue risus vel egestas, facilisis adipiscing! A quis mattis facilisis, adipiscing dis pellentesque ultricies mauris sed, tincidunt? Pulvinar, dolor tincidunt, placerat massa massa. Dis penatibus sed, porta amet non vel urna sociis. Elementum augue in vut. Parturient porttitor pulvinar. Dapibus ut porttitor sagittis mattis dignissim lorem, pid amet ut natoque elementum. Scelerisque adipiscing magnis, enim augue, auctor vel sit augue augue sagittis. Enim lorem, ac risus lundium elementum etiam nascetur. Mauris dolor nisi est diam quis dolor ac nisi parturient turpis massa aliquet porta enim augue.</p>
+						</div>
+						<div class="tab-pane fade" id="lB">
+							<ul>
+								<li>Porta tristique turpis enim magna, auctor pulvinar mattis et, </li>
+								<li>Augue ac, pulvinar scelerisque aliquam in</li>
+								<li>Montes porttitor tincidunt non, etiam parturient arcu proin</li>
+								<li>Augue arcu mus porta ultrices mus! Et parturient, sit etiam </li>
+								<li>Pulvinar velit quis massa auctor porttitor. Sed amet purus </li>
+								<li>Ac mus ut rhoncus mus augue porttitor ac</li> 
+								<li>Odio nec montes magna purus! Urna, ut aliquet placerat, </li>
+							</ul>
+						</div>
+						<div class="tab-pane fade" id="lC">
+							<ul>
+								<li>Porta tristique turpis enim magna, auctor pulvinar mattis et, </li>
+								<li>Augue ac, pulvinar scelerisque aliquam in</li>
+								<li>Montes porttitor tincidunt non, etiam parturient arcu proin</li>
+								<li>Augue arcu mus porta ultrices mus! Et parturient, sit etiam </li>
+								<li>Pulvinar velit quis massa auctor porttitor. Sed amet purus </li>
+								<li>Ac mus ut rhoncus mus augue porttitor ac</li> 
+								<li>Odio nec montes magna purus! Urna, ut aliquet placerat, </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr />
+			<p class="item-info"> 
+				<span class="item-tags">
+					<i class="icon-tags"></i> <a href="#">Joomla</a>, <a href="#">Layouts</a> 
+				</span> 
+				<span class="item-hits">
+					<i class="icon-signal"></i> Views: 228 
+				</span> 
+				<a class="smalltip" href="#" rel="popover" data-original-title="Item Tags & Views" data-placement="top">
+					<i class="icon-question-sign"></i>
+				</a>
+			</p>
+			
+			<div class="item-links well" style="padding:8px 0;">
+				<ul class="nav nav-list">
+					<li class="nav-header">
+						Item Links
+						<a class="smalltip" href="#" rel="popover" data-original-title="Extra Item Links" data-placement="top">
+							<i class="icon-question-sign"></i>
+						</a>
+					</li>
+					<li><a href="#">Joomla.org</a></li>
+					<li><a href="#">Joomla Extensions</a></li>
+					<li><a href="#">Joomla UI Project</a></li>
+				</ul>			
+			</div>
+			<a name="comment"></a>
+			<form class="form-horizontal">
+				<fieldset>
+					<legend>Comment</legend>
+					<div class="control-group">
+						<label class="control-label" for="textarea">Email</label>
+						<div class="controls">
+							<input id="prependedInput" size="16" type="text">
+							<p class="help-block">Enter Your Email Address</p>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="textarea">Title</label>
+						<div class="controls">
+							<input size="16" type="text">
+							<p class="help-block">Enter a Title</p>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="textarea">Comment</label>
+						<div class="controls">
+							<textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="optionsCheckbox">Email</label>
+						<div class="controls">
+							<label class="checkbox">
+								<input type="checkbox" id="optionsCheckbox" value="option1">
+								Send Comments to My Email</label>
+						</div>
+					</div>
+					<div class="form-actions">
+						<button type="submit" class="btn btn-primary">Comment</button>
+						<button type="reset" class="btn">Reset</button>
+					</div>
+				</fieldset>
+			</form>
+			<div class="row-fluid item-comment">
+				<div class="span12">					
+					<a href="#" class="thumbnail item-image pull-left"> <img src="http://placehold.it/60x60" alt=""> </a>
+					<div class="btn-toolbar pull-right">
+						<div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i> <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#comment-edit-modal" data-toggle="modal"><i class="icon-pencil"></i> Edit</a></li>
+								<li><a href="#"><i class="icon-trash"></i> Delete</a></li>
+								<li class="divider"></li>
+								<li><a href="#reply-modal" data-toggle="modal"><i class="icon-share-alt"></i> Reply</a> </li>
+								<li><a href="#report-modal" data-toggle="modal"><i class="icon-exclamation-sign"></i> Report</a></li>
+								<li class="divider"></li>
+								<li><a href="#"><i class="icon-edit"></i> Edit in admin</a></li>
+							</ul>
+						</div>
+					</div>
+					<h3>Comment Title</h3>
+					<p><strong>email@email.com</strong></p>
+					<p>Porttitor nisi ultricies dignissim placerat vel augue risus porta mattis mid, arcu tristique augue porttitor et scelerisque, aliquam rhoncus, vut tristique tempor pulvinar! Urna non?</p>
+				</div>
+			</div>
+			<hr />
+			<div class="row-fluid item-comment">
+				<div class="span11 offset1">					
+					<a href="#" class="thumbnail item-image pull-left"> <img src="http://placehold.it/60x60" alt=""> </a>
+					<div class="btn-toolbar pull-right">
+						<div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i> <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#comment-edit-modal" data-toggle="modal"><i class="icon-pencil"></i> Edit</a></li>
+								<li><a href="#"><i class="icon-trash"></i> Delete</a></li>
+								<li class="divider"></li>
+								<li><a href="#reply-modal" data-toggle="modal"><i class="icon-share-alt"></i> Reply</a> </li>
+								<li><a href="#report-modal" data-toggle="modal"><i class="icon-exclamation-sign"></i> Report</a></li>
+								<li class="divider"></li>
+								<li><a href="#"><i class="icon-edit"></i> Edit in admin</a></li>
+							</ul>
+						</div>
+					</div>
+					<h3>Comment Title</h3>
+					<p><strong>email@email.com</strong></p>
+					<p>Porttitor nisi ultricies dignissim placerat vel augue risus porta mattis mid, arcu tristique augue porttitor et scelerisque, aliquam rhoncus, vut tristique tempor pulvinar! Urna non?</p>
+				</div>
+			</div>
+			<hr />
+			<div class="row-fluid item-comment">
+				<div class="span12">					
+					<a href="#" class="thumbnail item-image pull-left"> <img src="http://placehold.it/60x60" alt=""> </a>
+					<div class="btn-toolbar pull-right">
+						<div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i> <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#comment-edit-modal" data-toggle="modal"><i class="icon-pencil"></i> Edit</a></li>
+								<li><a href="#"><i class="icon-trash"></i> Delete</a></li>
+								<li class="divider"></li>
+								<li><a href="#reply-modal" data-toggle="modal"><i class="icon-share-alt"></i> Reply</a> </li>
+								<li><a href="#report-modal" data-toggle="modal"><i class="icon-exclamation-sign"></i> Report</a></li>
+								<li class="divider"></li>
+								<li><a href="#"><i class="icon-edit"></i> Edit in admin</a></li>
+							</ul>
+						</div>
+					</div>
+					<h3>Comment Title</h3>
+					<p><strong>email@email.com</strong></p>
+					<p>Porttitor nisi ultricies dignissim placerat vel augue risus porta mattis mid, arcu tristique augue porttitor et scelerisque, aliquam rhoncus, vut tristique tempor pulvinar! Urna non?</p>
+				</div>
+			</div>
+			
+			<div class="item-navigation">
+				<a class="smalltip pull-right" href="#" rel="popover" data-original-title="Navigation Between Items" data-placement="top">
+					<i class="icon-question-sign"></i>
+				</a>
+				<ul class="pager">
+					<li class="previous">
+						<a href="#">Older</a>
+					</li>
+					<li class="next">
+						<a href="#">Newer</a>
+					</li>
+				</ul>
+			</div>
+		</div>		
+	</div>	
+	<hr />
+	<div class="footer">
+		<p class="pull-right"><a href="#top" id="back-top">Back to top</a></p>
+		<p>&copy; Copyright JUI Project 2012, All rights reserved.</p>
+	</div>
+</div>
+<!-- Image Thumbnail Modal -->
+<div id="thumbnail" class="modal fade">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3>Example of Work</h3>
+  </div>
+  <div class="modal-body">
+    <p><img src="http://placehold.it/543x300" alt=""></p>
+  </div>
+</div>
+<!-- Le javascript --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="../../../assets/js/jquery-1.7.1.min.js"></script> 
+<script src="../../../assets/js/bootstrap.min.js"></script> 
+<script type="text/javascript">
+	$('.dropdown-toggle').dropdown()
+	$('.collapse').collapse()
+	$('.modal').modal('hide')
+	$('.tip').popover('hide')
+	$('.smalltip').tooltip('hide')
+	$('.typeahead').typeahead()
+	$('.tabs').button()
+	$(".alert-message").alert()
+	$(window).bind("load resize", function() {
+	var windowHeight = "height:"+($(window).height()-45)+"px"; // height of full document
+	var windowWidth = "width:"+($(window).width()-30)+"px"; // width of full document
+	$('.side-nav, .fluid-content.main, .modal.full').attr('style', windowHeight);
+	});
+	$(document).ready(function() {
+		$(".smalltip").hide();
+        $(".hidetip").click(function(){
+           $(".smalltip").toggle("slow");
+        });
+	});	
+</script>
+</body>
+</html>
