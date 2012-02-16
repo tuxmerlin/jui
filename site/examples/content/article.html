@@ -19,36 +19,281 @@
 				<span class="icon-bar"></span> 
 				<span class="icon-bar"></span> 
 			</a> 
-			<a class="brand" href="../../../index.html">Joomla 3.0</a>
+			<span class="brand">admin toolbar</span>
 			<div class="nav-collapse">
 				<ul class="nav">
-					<li class=""><a href="../../index.html">Home</a></li>
-					<li><a href="../about.html">About</a></li>
-					<li><a href="../contact.html">Contact</a></li>
-					<li class="active dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Content <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li class="active"><a href="article.html">Article</a></li>
-							<li class=""><a href="article-pagebreak.html">Article Page Breaks</a></li>
-							<li class=""><a href="blog.html">Blog</a></li>
-							<li class=""><a href="list.html">List</a></li>
-							<li class=""><a href="multi-column.html">Multi-column</a></li>
-							<li class=""><a href="table.html">Table</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Jomsocial <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li class=""><a href="../jomsocial/signup.html">Signup</a></li>
-							<li class=""><a href="../jomsocial/directory.html">Directory</a></li>
-							<li class=""><a href="../jomsocial/user-home.html">User Home</a></li>
-							<li class=""><a href="../jomsocial/photos.html">Photos</a></li>
-							<li class=""><a href="../jomsocial/videos.html">Videos</a></li>
-							<li class=""><a href="../jomsocial/events.html">Events</a></li>
-						</ul>
-					</li>
+					<li class=""><a href="../../../admin/index.html">Admin</a></li>
+					<li><a href="#" class="hidetip" data-toggle="smalltip">Show Tooltips</a></li>
+					<li><a href="#" data-toggle="collapse" data-target=".page-edit">Edit</a></li>
 				</ul>
 			</div>
 			<!--/.nav-collapse --> 
+		</div>
+	</div>
+</div>
+<!-- Page Edit -->
+<div class="page-edit collapse out">
+	<div class="page-edit-inner">
+		<div class="container">
+			<form class="form-horizontal">
+				<div class="row">
+					<div class="span7">
+						<fieldset>
+							<legend>Edit Article</legend>
+							<div class="control-group">
+								<label id="jform_title-lbl" for="jform_title" class="hasTip required" title="">Title<span class="star">&nbsp;*</span></label>
+								<div class="controls">
+									<input type="text" value="About John Doe" class="input-medium required" size="30" required="required">
+								</div>
+							</div>
+							<div class="control-group">
+							<label id="jform_alias-lbl" for="jform_alias" class="hasTip" title="">Alias</label>				
+								<div class="controls">
+									<input type="text" name="jform[alias]" id="jform_alias" value="about-john-doe" class="inputbox" size="45">
+								</div>
+							</div>
+							<div class="control-group">
+								<label id="jform_catid-lbl" for="jform_catid" class="hasTip required" title="">Category<span class="star">&nbsp;*</span></label>				
+								<div class="controls">
+									<select id="jform_catid" name="jform[catid]" class="inputbox required" aria-required="true" required="required">
+										<option value="14">- Sample Data-Articles</option>
+										<option value="19">- - Joomla!</option>
+										<option value="20">- - - Extensions</option>
+										<option value="21" selected="selected">- - - - Components</option>
+										<option value="22">- - - - Modules</option>
+										<option value="64">- - - - - Content Modules</option>
+										<option value="65">- - - - - User Modules</option>
+										<option value="66">- - - - - Display Modules</option>
+										<option value="67">- - - - - Utility Modules</option>
+										<option value="75">- - - - - Navigation Modules</option>
+										<option value="23">- - - - Templates</option>
+										<option value="69">- - - - - Beez 20</option>
+										<option value="70">- - - - - Beez 5</option>
+										<option value="68">- - - - - Atomic</option>
+										<option value="24">- - - - Languages</option>
+										<option value="25">- - - - Plugins</option>
+										<option value="26">- - Park Site</option>
+										<option value="27">- - - Park Blog</option>
+										<option value="28">- - - Photo Gallery</option>
+										<option value="72">- - - - Animals</option>
+										<option value="73">- - - - Scenery</option>
+										<option value="29">- - Fruit Shop Site</option>
+										<option value="30">- - - Growers</option>
+										<option value="76">- - - Recipes</option>
+										<option value="9">- Uncategorised</option>
+										<option value="78">- Examples</option>
+										<option value="79">- Docs</option>
+									</select>
+								</div>
+							</div>
+							<div class="control-group">
+								<label id="jform_state-lbl" for="jform_state" class="hasTip" title="">Status</label>				
+								<div class="controls">
+									<select id="jform_state" name="jform[state]" class="inputbox" size="1">
+										<option value="1" selected="selected">Published</option>
+										<option value="0">Unpublished</option>
+										<option value="2">Archived</option>
+										<option value="-2">Trashed</option>
+									</select>
+								</div>
+							</div>	
+							<div class="control-group">
+								<label id="jform_access-lbl" for="jform_access" class="hasTip" title="">Access</label>													
+								<div class="controls">
+									<select id="jform_access" name="jform[access]" class="inputbox" size="1">
+										<option value="1" selected="selected">Public</option>
+										<option value="2">Registered</option>
+										<option value="3">Special</option>
+										<option value="4">Customer Access Level (Example)</option>
+									</select>
+								</div>
+							</div>				
+							<div class="control-group">
+								<label class="faux-label">Permissions</label>
+								<div class="controls">
+									<button type="button" class="btn" onclick="document.location.href='#access-rules';">
+										Set Permissions							
+									</button>
+								</div>
+							</div>
+							<div class="control-group">
+								<label id="jform_featured-lbl" for="jform_featured" class="hasTip" title="">Featured</label>
+								<div class="controls">
+									<select id="jform_featured" name="jform[featured]">
+										<option value="0" selected="selected">No</option>
+										<option value="1">Yes</option>
+									</select>
+								</div>
+							</div>
+							<div class="control-group">
+								<label id="jform_language-lbl" for="jform_language" class="hasTip" title="">Language</label>
+								<div class="controls">
+									<select id="jform_language" name="jform[language]" class="inputbox">
+										<option value="*" selected="selected">All</option>
+										<option value="en-GB">English (UK)</option>
+									</select>
+								</div>
+							</div>
+							<div class="control-group">
+								<label id="jform_id-lbl" for="jform_id" class="hasTip" title="">ID</label>
+								<div class="controls">
+									<input type="text" name="jform[id]" id="jform_id" value="1" class="readonly" size="10" readonly="readonly">
+								</div>
+							</div>
+							<div class="control-group">
+								
+							</div>
+							<div class="control-group">
+								<label id="jform_articletext-lbl" for="jform_articletext" class="hasTip" title="">Article Text</label>
+								<textarea name="jform[articletext]" id="jform_articletext" cols="0" rows="0" style="width: 100%; height: 250px;">&lt;p&gt;All&nbsp;components are also used in the administrator area of your website. In addition to the ones listed here, there are components in the administrator that do not have direct front end displays, but do help shape your site. The most important ones for most users are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Media Manager&lt;/li&gt;
+&lt;li&gt;Extensions Manager&lt;/li&gt;
+&lt;li&gt;Menu Manager&lt;/li&gt;
+&lt;li&gt;Global Configuration&lt;/li&gt;
+&lt;li&gt;Banners&lt;/li&gt;
+&lt;li&gt;Redirect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr title="Media Manager" alt="Media Manager" class="system-pagebreak" style="color: gray; border: 1px dashed gray;" /&gt;
+&lt;p&gt;&nbsp;&lt;/p&gt;
+&lt;h3&gt;Media Manager&lt;/h3&gt;
+&lt;p&gt;The media manager component lets you upload and insert images into content throughout your site. Optionally, you can enable the flash uploader which will allow you to to upload multiple images. &lt;a href="http://help.joomla.org/proxy/index.php?option=com_help&amp;amp;keyref=Help16:Content_Media_Manager"&gt;Help&lt;/a&gt;&lt;/p&gt;
+&lt;hr title="Extensions Manager" alt="Extensions Manager" class="system-pagebreak" style="color: gray; border: 1px dashed gray;" /&gt;
+&lt;h3&gt;Extensions Manager&lt;/h3&gt;
+&lt;p&gt;The extensions manager lets you install, update, uninstall and manage all of your extensions. The extensions manager has been extensively redesigned, although the core install and uninstall functionality remains the same as in Joomla! 1.5. &lt;a href="http://help.joomla.org/proxy/index.php?option=com_help&amp;amp;keyref=Help16:Extensions_Extension_Manager_Install"&gt;Help&lt;/a&gt;&lt;/p&gt;
+&lt;hr title="Menu Manager" alt="Menu Manager" class="system-pagebreak" style="color: gray; border: 1px dashed gray;" /&gt;
+&lt;h3&gt;Menu Manager&lt;/h3&gt;
+&lt;p&gt;The menu manager lets you create the menus you see displayed on your site. It also allows you to assign modules and template styles to specific menu links. &lt;a href="http://help.joomla.org/proxy/index.php?option=com_help&amp;amp;keyref=Help16:Menus_Menu_Manager"&gt;Help&lt;/a&gt;&lt;/p&gt;
+&lt;hr title="Global Configuration" alt="Global Configuration" class="system-pagebreak" style="color: gray; border: 1px dashed gray;" /&gt;
+&lt;h3&gt;Global Configuration&lt;/h3&gt;
+&lt;p&gt;The global configuration is where the site administrator configures things such as whether search engine friendly urls are enabled, the site meta data (descriptive text used by search engines and indexers) and other functions. For many beginning users simply leaving the settings on default is a good way to begin, although when your site is ready for the public you will want to change the meta data to match its content. &lt;a href="http://help.joomla.org/proxy/index.php?option=com_help&amp;amp;keyref=Help16:Site_Global_Configuration"&gt;Help&lt;/a&gt;&lt;/p&gt;
+&lt;hr title="Banners" alt="Banners" class="system-pagebreak" style="color: gray; border: 1px dashed gray;" /&gt;
+&lt;h3&gt;Banners&lt;/h3&gt;
+&lt;p&gt;The banners component provides a simple way to display a rotating image in a module and, if you wish to have advertising, a way to track the number of times an image is viewed and clicked. &lt;a href="http://help.joomla.org/proxy/index.php?option=com_help&amp;amp;keyref=Help16:Components_Banners_Banners_Edit"&gt;Help&lt;/a&gt;&lt;/p&gt;
+&lt;hr title="Redirect" class="system-pagebreak" /&gt;
+&lt;h3&gt;&lt;br /&gt;Redirect&lt;/h3&gt;
+&lt;p&gt;The redirect component is used to manage broken links that produce Page Not Found (404) errors. If enabled it will allow you to redirect broken links to specific pages. It can also be used to manage migration related URL changes.&nbsp;&lt;a href="http://help.joomla.org/proxy/index.php?option=com_help&amp;amp;keyref=Help16:Components_Redirect_Manager"&gt;Help&lt;/a&gt;&lt;/p&gt;</textarea>
+							</div>
+							<div class="control-group">
+								<div class="btn-toolbar">
+									<div class="btn-group">
+										<a class="btn" title="Article" href="#" rel="{handler: 'iframe', size: {x: 770, y: 400}}">
+											<i class="icon-file"></i> 
+											Article
+										</a>
+										<a class="btn" title="Image" href="#" rel="{handler: 'iframe', size: {x: 800, y: 500}}">
+											<i class="icon-picture"></i> 
+											Image
+										</a>
+										<a class="btn" title="Page Break" href="#" rel="{handler: 'iframe', size: {x: 400, y: 100}}">
+											<i class="icon-th-list"></i> 
+											Page Break
+										</a>
+										<a class="btn" title="Read More" href="#" onclick="insertReadmore('jform_articletext');return false;" rel="">
+											<i class="icon-arrow-right"></i> 
+											Read More
+										</a>
+									</div>
+								</div>
+							</div>							
+							<div class="form-actions">
+								<button type="submit" data-toggle="collapse" data-target=".page-edit" class="btn btn-primary">Save</button>
+								<button type="reset" data-toggle="collapse" data-target=".page-edit" class="btn">Cancel</button>
+							</div>
+						</fieldset>			
+					</div>
+					<div class="span5">
+						<div class="accordion" id="accordion2">
+							<div class="accordion-group">
+								<div class="accordion-heading"> 
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Publishing Options</a> 
+								</div>
+								<div id="collapseOne" class="accordion-body collapse in">
+									<div class="accordion-inner"> 
+										<fieldset>
+											<div class="control-group">	
+													<label id="jform_created_by-lbl" for="jform_created_by" class="hasTip" title="">Created by</label>
+													<div class="controls">
+														<input type="text" class="input-small" id="jform_created_by_name" value="Super User" disabled="disabled">
+														<a class="btn modal_jform_created_by" title="Select User" href="#" rel=""> Select User</a>									
+														<input type="hidden" id="jform_created_by_id" name="jform[created_by]" value="42">
+													</div>																	
+											</div>
+											<div class="control-group">
+												<label id="jform_created_by_alias-lbl" for="jform_created_by_alias" class="hasTip" title="">Created by alias</label>
+												<div class="controls">
+													<input type="text" name="jform[created_by_alias]" id="#" value="Joomla!" class="inputbox" size="20">
+												</div>
+											</div>
+										</fieldset>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-group">
+								<div class="accordion-heading"> 
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo"> 
+										Metadata Options
+									</a> 
+								</div>
+								<div id="collapseTwo" class="accordion-body collapse">
+									<div class="accordion-inner">
+										<fieldset>
+											<div class="control-group">
+												<label id="jform_metadesc-lbl" for="jform_metadesc" class="hasTip" title="">Meta Description</label>
+												<div class="controls">
+													<textarea name="jform[metadesc]" id="jform_metadesc" cols="30" rows="3" class="inputbox"></textarea>
+												</div>
+											</div>
+											<div class="control-group">
+												<label id="jform_metakey-lbl" for="jform_metakey" class="hasTip" title="">Meta Keywords</label>
+												<div class="controls">
+													<textarea name="jform[metakey]" id="jform_metakey" cols="30" rows="3" class="inputbox"></textarea>
+												</div>
+											</div>
+											<div class="control-group">
+												<label id="jform_metadata_robots-lbl" for="jform_metadata_robots" class="hasTip" title="">Robots</label>
+												<div class="controls">
+													<select id="jform_metadata_robots" name="jform[metadata][robots]">
+														<option value="" selected="selected">Use Global</option>
+														<option value="index, follow">Index, Follow</option>
+														<option value="noindex, follow">No index, follow</option>
+														<option value="index, nofollow">Index, No follow</option>
+														<option value="noindex, nofollow">No index, no follow</option>
+													</select>
+												</div>
+											</div>
+											<div class="control-group">
+												<label id="jform_metadata_author-lbl" for="jform_metadata_author" class="hasTip" title="">Author</label>
+												<div class="controls">
+													<input type="text" name="jform[metadata][author]" id="jform_metadata_author" value="" size="20">
+												</div>
+											</div>
+											<div class="control-group">
+												<label id="jform_metadata_rights-lbl" for="jform_metadata_rights" class="hasTip" title="">Content Rights</label>
+												<div class="controls">
+													<textarea name="jform[metadata][rights]" id="jform_metadata_rights" cols="30" rows="2"></textarea>
+												</div>
+											</div>
+											<div class="control-group">
+												<label id="jform_metadata_xreference-lbl" for="jform_metadata_xreference" class="hasTip" title="">External Reference</label>
+												<div class="controls">
+													<input type="text" name="jform[metadata][xreference]" id="jform_metadata_xreference" value="" class="inputbox" size="20">
+												</div>
+											</div>
+										</fieldset>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-group">
+								<div class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree"> Collapsible Group Item #3 </a> </div>
+								<div id="collapseThree" class="accordion-body collapse">
+									<div class="accordion-inner"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
 		</div>
 	</div>
 </div>
@@ -56,8 +301,18 @@
 <div class="header">
 	<div class="header-inner">
 		<div class="container"> 
-			<a class="brand pull-left" href="../../index.html"><img src="../../assets/img/joomla.png" alt="Joomla" /></a>
+			<a class="brand pull-left" href="../../index.html">
+				<img src="../../assets/img/joomla.png" alt="Joomla" />
+			</a>
+			<a class="smalltip" href="#" rel="popover" data-original-title="Site Logo" data-placement="right">
+				<i class="icon-question-sign"></i>
+			</a>
 			<ul class="nav nav-pills pull-right">
+				<li>
+					<a class="smalltip" href="#" rel="popover" data-original-title="Main Navigation" data-placement="left">
+						<i class="icon-question-sign"></i>
+					</a>
+				</li>
 				<li class=""><a href="../../index.html">Home</a></li>
 				<li><a href="../about.html">About</a></li>
 				<li><a href="../contact.html">Contact</a></li>
@@ -72,14 +327,13 @@
 					</ul>
 				</li>
 				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Jomsocial <b class="caret"></b></a>
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Examples <b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<li class=""><a href="../jomsocial/signup.html">Signup</a></li>
-						<li class=""><a href="../jomsocial/directory.html">Directory</a></li>
-						<li class=""><a href="../jomsocial/user-home.html">User Home</a></li>
-						<li class=""><a href="../jomsocial/photos.html">Photos</a></li>
-						<li class=""><a href="../jomsocial/videos.html">Videos</a></li>
-						<li class=""><a href="../jomsocial/events.html">Events</a></li>
+						<li class=""><a href="#">Blog</a></li>
+						<li class=""><a href="#">Community</a></li>
+						<li class=""><a href="#">Gallery</a></li>
+						<li class=""><a href="#">Shop</a></li>
+						<li class=""><a href="#">Events</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -91,6 +345,9 @@
 <div class="container">
 	<div class="row">
 		<div class="span3">
+			<a class="smalltip" href="#" rel="popover" data-original-title="Left Column Modules" data-placement="right">
+				<i class="icon-question-sign"></i>
+			</a>
 			<div class="module">
 				<div class="module-content">
 					<ul class="nav nav-list">
@@ -115,6 +372,9 @@
 				</h1>
 			</div>
 			<div class="item-actions btn-toolbar pull-right"> 
+				<a class="smalltip" href="#" rel="popover" data-original-title="Article Actions" data-placement="top">
+					<i class="icon-question-sign"></i>
+				</a>
 				<div class="btn-group"> 
 					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
 						<i class="icon-cog"></i> <span class="caret"></span>
@@ -216,6 +476,9 @@
 				</ul>			
 			</div>
 			<a name="comment"></a>
+			<a class="smalltip" href="#" rel="popover" data-original-title="Article Comments: CompoJoomComments" data-placement="top">
+				<i class="icon-question-sign"></i>
+			</a>
 			<form class="form-horizontal">
 				<fieldset>
 					<legend>Comment</legend>
@@ -347,7 +610,8 @@
 <script src="../../../assets/js/bootstrap.min.js"></script> 
 <script type="text/javascript">
 	$('.dropdown-toggle').dropdown()
-	$('.collapse').collapse()
+	//$('.collapse').collapse()
+	$(".page-edit").collapse('hide')
 	$('.modal').modal('hide')
 	$('.tip').popover('hide')
 	$('.smalltip').tooltip('hide')
@@ -362,9 +626,9 @@
 	$(document).ready(function() {
 		$(".smalltip").hide();
         $(".hidetip").click(function(){
-           $(".smalltip").toggle("slow");
+           $(".smalltip").toggle();
         });
-	});	
+	});
 </script>
 </body>
 </html>
