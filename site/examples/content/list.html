@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>Article</title>
+<title>List</title>
 <link href="../../../assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
 <link href="../../../assets/css/bootstrap.extended.css" rel="stylesheet" type="text/css" />
 <link href="../../assets/css/theme.css" rel="stylesheet" type="text/css" />
@@ -19,36 +19,23 @@
 				<span class="icon-bar"></span> 
 				<span class="icon-bar"></span> 
 			</a> 
-			<a class="brand" href="../../../index.html">Joomla 3.0</a>
+			<span class="brand">admin toolbar</span>
 			<div class="nav-collapse">
 				<ul class="nav">
-					<li class=""><a href="../../index.html">Home</a></li>
-					<li><a href="../about.html">About</a></li>
-					<li><a href="../contact.html">Contact</a></li>
-					<li class="active dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Content <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li class=""><a href="article.html">Article</a></li>
-							<li class=""><a href="article-pagebreak.html">Article Page Breaks</a></li>
-							<li class=""><a href="blog.html">Blog</a></li>
-							<li class="active"><a href="list.html">List</a></li>
-							<li class=""><a href="multi-column.html">Multi-column</a></li>
-							<li class=""><a href="table.html">Table</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Jomsocial <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li class=""><a href="../jomsocial/signup.html">Signup</a></li>
-							<li class=""><a href="../jomsocial/directory.html">Directory</a></li>
-							<li class=""><a href="../jomsocial/user-home.html">User Home</a></li>
-							<li class=""><a href="../jomsocial/photos.html">Photos</a></li>
-							<li class=""><a href="../jomsocial/videos.html">Videos</a></li>
-							<li class=""><a href="../jomsocial/events.html">Events</a></li>
-						</ul>
-					</li>
+					<li class=""><a href="../../../admin/index.html">Admin</a></li>
+					<li><a href="#" class="hidetip" data-toggle="smalltip">Show Tooltips</a></li>
+					<li><a href="#" data-toggle="collapse" data-target=".page-edit">Edit</a></li>
 				</ul>
 			</div>
 			<!--/.nav-collapse --> 
+		</div>
+	</div>
+</div>
+<!-- Page Edit -->
+<div class="page-edit collapse out">
+	<div class="page-edit-inner">
+		<div class="container">
+			Options go here
 		</div>
 	</div>
 </div>
@@ -56,7 +43,9 @@
 <div class="header">
 	<div class="header-inner">
 		<div class="container"> 
-			<a class="brand pull-left" href="../../index.html"><img src="../../assets/img/joomla.png" alt="Joomla" /></a>
+			<a class="brand pull-left" href="../../index.html">
+				<img src="../../assets/img/joomla.png" alt="Joomla" />
+			</a>
 			<ul class="nav nav-pills pull-right">
 				<li class=""><a href="../../index.html">Home</a></li>
 				<li><a href="../about.html">About</a></li>
@@ -72,14 +61,13 @@
 					</ul>
 				</li>
 				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Jomsocial <b class="caret"></b></a>
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Examples <b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<li class=""><a href="../jomsocial/signup.html">Signup</a></li>
-						<li class=""><a href="../jomsocial/directory.html">Directory</a></li>
-						<li class=""><a href="../jomsocial/user-home.html">User Home</a></li>
-						<li class=""><a href="../jomsocial/photos.html">Photos</a></li>
-						<li class=""><a href="../jomsocial/videos.html">Videos</a></li>
-						<li class=""><a href="../jomsocial/events.html">Events</a></li>
+						<li class=""><a href="#">Blog</a></li>
+						<li class=""><a href="#">Community</a></li>
+						<li class=""><a href="#">Gallery</a></li>
+						<li class=""><a href="#">Shop</a></li>
+						<li class=""><a href="#">Events</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -347,7 +335,6 @@
 <script src="../../../assets/js/bootstrap.min.js"></script> 
 <script type="text/javascript">
 	$('.dropdown-toggle').dropdown()
-	$('.collapse').collapse()
 	$('.modal').modal('hide')
 	$('.tip').popover('hide')
 	$('.smalltip').tooltip('hide')
