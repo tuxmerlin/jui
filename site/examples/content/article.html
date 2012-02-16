@@ -22,9 +22,22 @@
 			<span class="brand">admin toolbar</span>
 			<div class="nav-collapse">
 				<ul class="nav">
-					<li class=""><a href="../../../admin/index.html">Admin</a></li>
-					<li><a href="#" class="hidetip" data-toggle="smalltip">Show Tooltips</a></li>
-					<li><a href="#" data-toggle="collapse" data-target=".page-edit">Edit</a></li>
+					<li class="divider-vertical"></li>
+					<li><a href="#" class="btn btn-navbar hidetip" data-toggle="smalltip"><i class="icon-info-sign icon-white"></i> Show Tooltips</a></li>
+					<li><a href="#" class="btn btn-navbar" data-toggle="collapse" data-target=".page-edit"><i class="icon-edit icon-white"></i> Edit</a></li>
+				</ul>
+				<ul class="nav pull-right">
+					<li class="divider-vertical"></li>
+					<li><a class="btn btn-navbar" target="_blank" href="../../../admin/index.html"><i class="icon-lock icon-white"></i> Admin</a></li>
+					<li class="dropdown">
+		              <a href="#" class="btn btn-navbar dropdown-toggle" data-toggle="dropdown">username <b class="caret"></b></a>
+		              <ul class="dropdown-menu">
+		                <li><a href="#">Profile</a></li>
+		                <li><a href="#">Edit Account</a></li>
+		                <li class="divider"></li>
+		                <li><a href="#">Sign out</a></li>
+		              </ul>
+		            </li>
 				</ul>
 			</div>
 			<!--/.nav-collapse --> 
@@ -39,7 +52,7 @@
 				<div class="row">
 					<div class="span12">
 						<div class="tabbable">
-							<ul class="nav nav-tabs">
+							<ul class="nav nav-tabs nav-dark">
 								<li class="active"><a href="#article" data-toggle="tab">Edit Article</a></li>
 								<li><a href="#metadata" data-toggle="tab">Metadata Options</a></li>
 							</ul>
@@ -250,12 +263,12 @@
 				<img src="../../assets/img/joomla.png" alt="Joomla" />
 			</a>
 			<a class="smalltip" href="#" rel="popover" data-original-title="Site Logo" data-placement="right">
-				<i class="icon-question-sign"></i>
+				<i class="icon-info-sign"></i>
 			</a>
 			<ul class="nav nav-pills pull-right">
 				<li>
 					<a class="smalltip" href="#" rel="popover" data-original-title="Main Navigation" data-placement="left">
-						<i class="icon-question-sign"></i>
+						<i class="icon-info-sign"></i>
 					</a>
 				</li>
 				<li class=""><a href="../../index.html">Home</a></li>
@@ -291,7 +304,7 @@
 	<div class="row">
 		<div class="span3">
 			<a class="smalltip" href="#" rel="popover" data-original-title="Left Column Modules" data-placement="right">
-				<i class="icon-question-sign"></i>
+				<i class="icon-info-sign"></i>
 			</a>
 			<div class="module">
 				<div class="module-content">
@@ -310,15 +323,15 @@
 		<div class="span9">
 			<div class="page-header">
 				<h1>
-					About John Doe
+					A Totally New User Experience
 					<a class="smalltip" href="#" rel="popover" data-original-title="Page Title" data-placement="top">
-						<i class="icon-question-sign"></i>
+						<i class="icon-info-sign"></i>
 					</a>
 				</h1>
 			</div>
 			<div class="item-actions btn-toolbar pull-right"> 
 				<a class="smalltip" href="#" rel="popover" data-original-title="Article Actions" data-placement="top">
-					<i class="icon-question-sign"></i>
+					<i class="icon-info-sign"></i>
 				</a>
 				<div class="btn-group"> 
 					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
@@ -339,9 +352,9 @@
 				</div>
 			</div>
 			<h2 class="item-title">
-				A Little About Me 
+				Joomla 3.0 
 				<a class="smalltip" href="#" rel="popover" data-original-title="Item Title" data-placement="top">
-					<i class="icon-question-sign"></i>
+					<i class="icon-info-sign"></i>
 				</a>
 			</h2> 	
 			<p class="item-info">
@@ -352,14 +365,14 @@
 					on <i class="icon-time"></i> 01/20/2012 
 				</span> 
 				<a class="smalltip" href="#" rel="popover" data-original-title="Item Info" data-placement="top">
-					<i class="icon-question-sign"></i>
+					<i class="icon-info-sign"></i>
 				</a>
 			</p>
 			<div class="item-content">
 				<h3 class="item-subtitle">
 					I'm a jack of all trades and I love Joomla
 					<a class="smalltip" href="#" rel="popover" data-original-title="Full Item with Full Image" data-placement="top">
-						<i class="icon-question-sign"></i>
+						<i class="icon-info-sign"></i>
 					</a>
 				</h3>
 				<div class="item-image thumbnail pull-right">
@@ -404,7 +417,7 @@
 					<i class="icon-signal"></i> Views: 228 
 				</span> 
 				<a class="smalltip" href="#" rel="popover" data-original-title="Item Tags & Views" data-placement="top">
-					<i class="icon-question-sign"></i>
+					<i class="icon-info-sign"></i>
 				</a>
 			</p>			
 			<div class="item-links well" style="padding:8px 0;">
@@ -412,7 +425,7 @@
 					<li class="nav-header">
 						Item Links
 						<a class="smalltip" href="#" rel="popover" data-original-title="Extra Item Links" data-placement="top">
-							<i class="icon-question-sign"></i>
+							<i class="icon-info-sign"></i>
 						</a>
 					</li>
 					<li><a href="#">Joomla.org</a></li>
@@ -422,7 +435,7 @@
 			</div>
 			<a name="comment"></a>
 			<a class="smalltip" href="#" rel="popover" data-original-title="Article Comments: CompoJoomComments" data-placement="top">
-				<i class="icon-question-sign"></i>
+				<i class="icon-info-sign"></i>
 			</a>
 			<form class="form-horizontal">
 				<fieldset>
@@ -520,7 +533,7 @@
 			
 			<div class="item-navigation">
 				<a class="smalltip pull-right" href="#" rel="popover" data-original-title="Navigation Between Items" data-placement="top">
-					<i class="icon-question-sign"></i>
+					<i class="icon-info-sign"></i>
 				</a>
 				<ul class="pager">
 					<li class="previous">
