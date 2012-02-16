@@ -73,9 +73,9 @@ body {
 /* Page Edit */
 .page-edit {
 	background:#555 url(../img/noise.png);
-	-moz-box-shadow: 0px 0px 20px #333 inset;
-	-webkit-box-shadow: 0px 0px 20px #333 inset;
-	box-shadow: 0px 0px 20px #333 inset;
+	-moz-box-shadow: 0px 0px 40px #111 inset;
+	-webkit-box-shadow: 0px 0px 40px #111 inset;
+	box-shadow: 0px 0px 40px #111 inset;
 }
 .page-edit-inner {
 	padding:20px 0;
