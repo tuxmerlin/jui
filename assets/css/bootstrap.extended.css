@@ -115,3 +115,28 @@
 .row-fluid .offset11 {
   margin-left: 91.489361693%;
 }
+
+/* Navbar Buttons */
+.navbar .nav > li > a.btn{
+	padding: 4px 10px;
+	line-height: 18px;
+}
+
+/* Nav Tabs Dark */
+.nav-tabs.nav-dark{
+	border-bottom: 1px solid #333;
+	text-shadow: 1px 1px 1px #000;
+}
+.nav-tabs.nav-dark > li > a{
+	color: #F8F8F8;
+}
+.nav-tabs.nav-dark > li > a:hover {
+  border-color: #333 #333 #111;
+  background-color: #777777;
+}
+.nav-tabs.nav-dark > .active > a, .nav-tabs.nav-dark > .active > a:hover {
+  color: #ffffff;
+  background-color: #555555;
+  border: 1px solid #222;
+  border-bottom-color: transparent;
+}
