@@ -261,7 +261,7 @@
 						<li class=""><a href="article-pagebreak.html">Article Page Breaks</a></li>
 						<li class=""><a href="blog.html">Blog</a></li>
 						<li class=""><a href="list.html">List</a></li>
-						<li class="active"><a href="multi-column.html">Multi-column</a></li>
+						<li class=""><a href="multi-column.html">Multi-column</a></li>
 						<li class=""><a href="table.html">Table</a></li>
 					</ul>
 				</li>
@@ -271,7 +271,7 @@
 						<li class=""><a href="#">Blog</a></li>
 						<li class=""><a href="#">Community</a></li>
 						<li class=""><a href="#">Gallery</a></li>
-						<li class=""><a href="#">Shop</a></li>
+						<li class="active"><a href="#">Shop</a></li>
 						<li class=""><a href="#">Events</a></li>
 					</ul>
 				</li>
@@ -295,6 +295,12 @@
 					</ul>
 				</div>
 			</div>
+			<!-- Begin search -->
+			<hr />
+			<form class="well form-search">
+		        <input type="text" class="input-medium search-query" style="margin: 0 auto;" placeholder="Product search" data-provide="typeahead" data-items="4" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Connecticut&quot;,&quot;Delaware&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]">
+		      </form>
+			<!-- End search -->
 			<!-- Begin cart -->
 			<hr />
 			<div class="module well">
@@ -388,72 +394,72 @@
 					<div class="well">
 						<div class="page-header">
 							<h4>Product Details</h4>
-							<p class="label label-success">$19.99</p>
-							<p class="label label-warning">Free Shipping</p>
-							<form class="form-small">
-						        <fieldset>
-						          <div class="control-group">
-						            <label class="control-label">Product Option</label>
-						            <div class="controls docs-input-sizes">
-						              <select class="span2">
-						                <option>- Select Option -</option>
-						                <option>2</option>
-						                <option>3</option>
-						                <option>4</option>
-						                <option>5</option>
-						              </select>
-						            </div>
-						          </div>
-						          <div class="control-group">
-						            <label class="control-label">Shipping Estimate</label>
-						            <div class="controls">
-						              <input class="span2" type="text" placeholder="Zipcode">
-						            </div>
-						          </div>
-						          <div class="control-group">
-						            <label class="control-label" for="prependedInput">Calculated Shipping</label>
-						            <div class="controls">
-						              <div class="input-prepend">
-						                <span class="add-on">$</span>
-						                <input class="span2" id="prependedInput" size="16" type="text">
-						              </div>
-						              <p class="help-block">Based on your zip code.</p>
-						            </div>
-						          </div>
-						          <div class="control-group">
-						            <label class="control-label" for="inlineCheckboxes">Product Choices</label>
-						            <div class="controls">
-						              <label class="checkbox inline">
-						                <input type="checkbox" id="inlineCheckbox1" value="option1"> One
-						              </label>
-						              <label class="checkbox inline">
-						                <input type="checkbox" id="inlineCheckbox2" value="option2"> Two
-						              </label>
-						              <label class="checkbox inline">
-						                <input type="checkbox" id="inlineCheckbox3" value="option3"> Three
-						              </label>
-						            </div>
-						          </div>
-						          <div class="control-group">
-						            <label class="control-label">Is this a gift?</label>
-						            <div class="controls">
-						              <label class="radio">
-						                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-						                Yes
-						              </label>
-						              <label class="radio">
-						                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-						                No
-						              </label>
-						            </div>
-						          </div>
-						          <div class="form-actions">
-						            <button type="submit" class="btn btn-success">Check Out</button>
-						            <button class="btn">Add to Cart</button>
-						          </div>
-						        </fieldset>
-						      </form>
 						</div>
+						<p class="label label-success">$19.99</p>
+						<p class="label">Free Shipping</p>
+						<form class="form-small">
+					        <fieldset>
+					          <div class="control-group">
+					            <label class="control-label">Product Option</label>
+					            <div class="controls docs-input-sizes">
+					              <select class="span2">
+					                <option>- Select Option -</option>
+					                <option>2</option>
+					                <option>3</option>
+					                <option>4</option>
+					                <option>5</option>
+					              </select>
+					            </div>
+					          </div>
+					          <div class="control-group">
+					            <label class="control-label">Shipping Estimate</label>
+					            <div class="controls">
+					              <input class="span2" type="text" placeholder="Zipcode">
+					            </div>
+					          </div>
+					          <div class="control-group">
+					            <label class="control-label" for="prependedInput">Calculated Shipping</label>
+					            <div class="controls">
+					              <div class="input-prepend">
+					                <span class="add-on">$</span>
+					                <input class="span2" id="prependedInput" size="16" type="text">
+					              </div>
+					              <p class="help-block">Based on your zip code.</p>
+					            </div>
+					          </div>
+					          <div class="control-group">
+					            <label class="control-label" for="inlineCheckboxes">Product Choices</label>
+					            <div class="controls">
+					              <label class="checkbox inline">
+					                <input type="checkbox" id="inlineCheckbox1" value="option1"> One
+					              </label>
+					              <label class="checkbox inline">
+					                <input type="checkbox" id="inlineCheckbox2" value="option2"> Two
+					              </label>
+					              <label class="checkbox inline">
+					                <input type="checkbox" id="inlineCheckbox3" value="option3"> Three
+					              </label>
+					            </div>
+					          </div>
+					          <div class="control-group">
+					            <label class="control-label">Is this a gift?</label>
+					            <div class="controls">
+					              <label class="radio">
+					                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+					                Yes
+					              </label>
+					              <label class="radio">
+					                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+					                No
+					              </label>
+					            </div>
+					          </div>
+					          <div class="form-actions">
+					            <button type="submit" class="btn btn-success">Check Out</button>
+					            <button class="btn">Add to Cart</button>
+					          </div>
+					        </fieldset>
+					      </form>
 					</div>
 				</div>
 			</div>
