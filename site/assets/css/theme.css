@@ -2,6 +2,9 @@
 body {
 	padding-top:40px;
 }
+.thumbnail {
+	margin-bottom:9px;
+}
 .row-fluid .offset1 {
   margin-left: 8.382978723%!important;
 }
@@ -271,18 +274,6 @@ body {
 	}
 	.nav-pills  > li:last-child > a {
 		margin-bottom: 1px;
-	}
-	.thumbnail {
-		border:0;
-		-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.075);
-		-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.075);
-		box-shadow: 0 0 0 rgba(0, 0, 0, 0.075);	
-	}
-	a.thumbnail:hover {
-		border-color:none;
-		-webkit-box-shadow: 0 0 0 rgba(0, 105, 214, 0.25);
-		-moz-box-shadow: 0 0 0 rgba(0, 105, 214, 0.25);
-		box-shadow: 0 0 0 rgba(0, 105, 214, 0.25);
 	}
 	.form-search > .pull-left,
 	.form-search > .pull-right {
