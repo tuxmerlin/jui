@@ -38,10 +38,6 @@ body {
 .row-fluid .offset11 {
   margin-left: 91.489361693%!important;
 }
-.nav-list .active > a:hover {
-	color:#333;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-}
 .nav-pills .dropdown.open > .dropdown-toggle {
 	color: white;
 	background-color: #999;
@@ -52,7 +48,6 @@ body {
 }
 /* Header */
 .header {
-	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
 	background-color: #ffffff;
 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d9effa), color-stop(25%, #d9effa), to(#ffffff));
 	background-image: -webkit-linear-gradient(#d9effa, #d9effa 25%, #ffffff);
