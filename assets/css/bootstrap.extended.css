@@ -140,3 +140,11 @@
   border: 1px solid #222;
   border-bottom-color: transparent;
 }
+
+/* Inline Thumbnails */
+.thumbnail.pull-left{
+	margin: 0 10px 10px 0;
+}
+.thumbnail.pull-right{
+	margin: 0 0 10px 10px;
+}
