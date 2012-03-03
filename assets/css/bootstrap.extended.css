@@ -3,6 +3,14 @@
 .small{
 	font-size: 11px;
 }
+/* Disabled Link */
+a.disabled,
+a.disabled:hover {
+  color: #999999;
+  background-color: transparent;
+  cursor: default;
+  text-decoration: none;
+}
 /* Hero Banner */
 .hero-unit {
 	text-align:center;
