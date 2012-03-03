@@ -1,4 +1,9 @@
-/* CSS Document */
+/* Extending Bootstrap */
+/* Typography */
+.small{
+	font-size: 11px;
+}
+/* Hero Banner */
 .hero-unit {
 	text-align:center;
 }
