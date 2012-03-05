@@ -3,6 +3,11 @@
 .small{
 	font-size: 11px;
 }
+/* Max Width */
+iframe,
+svg{
+	max-width: 100%;
+}
 /* Disabled Link */
 a.disabled,
 a.disabled:hover {
